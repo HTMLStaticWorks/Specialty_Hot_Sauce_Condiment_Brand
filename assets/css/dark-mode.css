@@ -1,0 +1,55 @@
+:root.dark {
+  --color-bg: #121212; /* Deep Black / Charcoal */
+  --color-card-bg: #1E1E1E;
+  --color-neutral: #121212;
+  --color-text: #FDFBF7; /* Warm off-white text */
+  --color-text-muted: #A0A0A0;
+  --color-secondary: #FDFBF7;
+  --color-border: #333333;
+}
+
+.dark body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: var(--color-text);
+}
+
+.dark header {
+  background-color: rgba(18, 18, 18, 0.9);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.dark .sauce-card {
+  background-color: var(--color-card-bg);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.dark .sauce-card:hover {
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+.dark input, .dark textarea, .dark select {
+  background-color: #2A2A2A;
+  color: #fff;
+  border-color: #444;
+}
+
+.dark .bg-white {
+  background-color: var(--color-card-bg) !important;
+}
+
+.dark .text-gray-900 {
+  color: var(--color-text) !important;
+}
+
+.dark .text-gray-600 {
+  color: var(--color-text-muted) !important;
+}
+
+.dark .matrix-bar {
+  background-color: #333;
+}
+

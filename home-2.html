@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Fyrza - Born From Peppers. Built For Flavor.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#B22222',
+                        brandRedDark: '#8B0000',
+                        brandCharcoal: '#2C2C2C',
+                        brandOrange: '#FF4500',
+                        brandCream: '#FDFBF7'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body
+    class="antialiased overflow-x-hidden relative bg-brandCream dark:bg-[#121212] text-brandCharcoal dark:text-gray-100">
+
+    <!-- Global Header -->
+    <header id="globalHeader" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <i
+                            class="fa-solid fa-fire-flame-curved text-brandRed text-3xl group-hover:scale-110 transition-transform"></i>
+                        <span
+                            class="font-display font-black text-2xl tracking-tighter text-brandCharcoal dark:text-brandCream">Fyrza</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex space-x-8 items-center" aria-label="Main Navigation">
+                    <a href="index.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home</a>
+                    <a href="home-2.html" class="nav-link text-gray-900 dark:text-gray-100 py-2 active">Home 2</a>
+                    <a href="about.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">About</a>
+                    <a href="products.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Products</a>
+                    <a href="recipes.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Recipes</a>
+                    <a href="wholesale.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Wholesale</a>
+                    <a href="contact.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Contact</a>
+                </nav>
+
+                <!-- Right Actions -->
+                <div class="hidden lg:flex items-center space-x-6">
+
+                    <button id="rtlToggle"
+                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors font-bold text-lg"
+                        aria-label="Toggle RTL">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button id="themeToggle"
+                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors"
+                        aria-label="Toggle Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <a href="products.html" class="btn-primary">
+                        Shop Flavors
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center gap-4">
+                    <button id="themeToggleMobile" class="text-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button id="mobileMenuBtn"
+                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed focus:outline-none"
+                        aria-label="Open Menu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden bg-white dark:bg-gray-900 absolute w-full border-b border-gray-100 dark:border-gray-800 shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Home</a>
+                <a href="home-2.html" class="block px-3 py-3 rounded-md text-base font-semibold text-brandRed bg-brandRed/10">Home
+                    2</a>
+                <a href="about.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">About</a>
+                <a href="products.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Products</a>
+                <a href="recipes.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Recipes</a>
+                <a href="wholesale.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Wholesale</a>
+                <a href="contact.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Contact</a>
+                <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <a href="products.html" class="btn-primary w-full text-center">Shop Flavors</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="relative pt-32 pb-12 overflow-hidden section-padding bg-brandCream dark:bg-[#121212]">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0 pointer-events-none">
+                <img src="https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?w=1600&q=80"
+                    alt="Hero Background"
+                    class="w-full h-full object-cover opacity-10 dark:opacity-20 mix-blend-multiply dark:mix-blend-screen">
+            </div>
+
+            <div class="max-w-7xl mx-auto relative z-10 text-center mb-16" data-aos="fade-up">
+                <h1 class="text-5xl md:text-7xl font-display mb-6">Born From Peppers.<br>Built For <span
+                        class="text-brandRed">Flavor.</span></h1>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10">We don't just bring the
+                    heat. We bring the flavor profile that transforms your meals.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="products.html" class="btn-primary text-lg px-8">Shop All</a>
+                    <a href="#about" class="btn-outline text-lg px-8 bg-white/50 dark:bg-transparent">Our Story</a>
+                </div>
+            </div>
+
+            <!-- 3 Bottles Staggered -->
+            <div class="relative z-10 w-full max-w-5xl mx-auto flex justify-center items-end h-[300px] md:h-[400px]">
+                <div class="relative w-1/3 flex justify-center" data-aos="slide-up" data-aos-delay="200"
+                    data-aos-duration="1000">
+                    <img src="https://images.pexels.com/photos/15750739/pexels-photo-15750739.jpeg" alt="Green Sauce"
+                        class="h-48 md:h-64 object-cover translate-y-12 shadow-xl hover:-translate-y-4 transition-transform duration-500 rounded-2xl border-4 border-white dark:border-gray-800">
+                </div>
+                <div class="relative w-1/3 flex justify-center z-20" data-aos="slide-up" data-aos-delay="400"
+                    data-aos-duration="1000">
+                    <img src="https://images.pexels.com/photos/27116329/pexels-photo-27116329.jpeg" alt="Red Sauce"
+                        class="h-64 md:h-80 object-cover shadow-2xl hover:-translate-y-4 transition-transform duration-500 rounded-2xl border-4 border-white dark:border-gray-800">
+                </div>
+                <div class="relative w-1/3 flex justify-center" data-aos="slide-up" data-aos-delay="600"
+                    data-aos-duration="1000">
+                    <img src="https://images.pexels.com/photos/13696031/pexels-photo-13696031.jpeg" alt="Black Sauce"
+                        class="h-48 md:h-64 object-cover translate-y-12 shadow-xl hover:-translate-y-4 transition-transform duration-500 rounded-2xl border-4 border-white dark:border-gray-800">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: Shop By Heat -->
+        <section class="py-24 bg-white dark:bg-[#181818] section-padding">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-12" data-aos="fade-right">
+                    <h2 class="text-4xl font-display">Shop By Heat</h2>
+                    <div class="w-24 h-1 bg-brandRed mt-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Category 1 -->
+                    <a href="products.html" class="group relative h-80 rounded-xl overflow-hidden block"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.pexels.com/photos/11318047/pexels-photo-11318047.jpeg"
+                            alt="Mild Category"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                            <h3
+                                class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                                Mild</h3>
+                            <p
+                                class="text-green-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                                Flavor First. Low Heat.</p>
+                        </div>
+                    </a>
+
+                    <!-- Category 2 -->
+                    <a href="products.html" class="group relative h-80 rounded-xl overflow-hidden block"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.pexels.com/photos/33440712/pexels-photo-33440712.jpeg"
+                            alt="Medium Category"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                            <h3
+                                class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                                Medium</h3>
+                            <p
+                                class="text-yellow-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                                The Perfect Balance.</p>
+                        </div>
+                    </a>
+
+                    <!-- Category 3 -->
+                    <a href="products.html" class="group relative h-80 rounded-xl overflow-hidden block"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://images.pexels.com/photos/5966140/pexels-photo-5966140.jpeg"
+                            alt="Hot Category"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                            <h3
+                                class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                                Hot</h3>
+                            <p
+                                class="text-orange-500 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                                A Serious Kick.</p>
+                        </div>
+                    </a>
+
+                    <!-- Category 4 -->
+                    <a href="products.html" class="group relative h-80 rounded-xl overflow-hidden block"
+                        data-aos="fade-up" data-aos-delay="400">
+                        <img src="https://images.pexels.com/photos/4958528/pexels-photo-4958528.jpeg"
+                            alt="Extra Hot Category"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                            <h3
+                                class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                                Extra Hot</h3>
+                            <p class="text-red-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                                For True Heat Seekers.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Flavor Profiles -->
+        <section class="py-24 bg-gray-50 dark:bg-[#1c1c1c] section-padding">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-4xl font-display mb-16" data-aos="zoom-in">Find Your Flavor Profile</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="w-16 h-16 mx-auto bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-fire-burner text-2xl text-brandCharcoal dark:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Smoky</h3>
+                        <p class="text-gray-500 text-sm mb-4">Deep, rich notes from roasted chipotle and mesquite.</p>
+                        <span class="text-xs font-bold text-brandRed">Rec: Smoked Ember</span>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="w-16 h-16 mx-auto bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-candy-cane text-2xl text-pink-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Sweet</h3>
+                        <p class="text-gray-500 text-sm mb-4">Honey and brown sugar balanced with sharp heat.</p>
+                        <span class="text-xs font-bold text-brandRed">Rec: Fire Honey</span>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="w-16 h-16 mx-auto bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-lemon text-2xl text-yellow-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Tangy</h3>
+                        <p class="text-gray-500 text-sm mb-4">Bright citrus and vinegar notes for sharp cut-through.</p>
+                        <span class="text-xs font-bold text-brandRed">Rec: Green Voltage</span>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow"
+                        data-aos="fade-up" data-aos-delay="400">
+                        <div
+                            class="w-16 h-16 mx-auto bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-bowl-food text-2xl text-amber-700 dark:text-amber-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Savory</h3>
+                        <p class="text-gray-500 text-sm mb-4">Umami-rich garlic, onion, and secret spice blends.</p>
+                        <span class="text-xs font-bold text-brandRed">Rec: Garlic Fury</span>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow"
+                        data-aos="fade-up" data-aos-delay="500">
+                        <div
+                            class="w-16 h-16 mx-auto bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-apple-whole text-2xl text-orange-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Fruity</h3>
+                        <p class="text-gray-500 text-sm mb-4">Tropical mango and pineapple fused with habanero.</p>
+                        <span class="text-xs font-bold text-brandRed">Rec: Mango Blaze</span>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow"
+                        data-aos="fade-up" data-aos-delay="600">
+                        <div
+                            class="w-16 h-16 mx-auto bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-flask text-2xl text-purple-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Fermented</h3>
+                        <p class="text-gray-500 text-sm mb-4">Aged pepper mash for complex, funky depth.</p>
+                        <span class="text-xs font-bold text-brandRed">Rec: Classic Red</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: Brand Story / Timeline -->
+        <section class="py-32 bg-white dark:bg-gray-900 section-padding overflow-hidden">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-20" data-aos="fade-down">
+                    <h2 class="text-4xl md:text-5xl font-display mb-4">From Pepper to Bottle</h2>
+                    <p class="text-gray-500 max-w-2xl mx-auto">We don't cut corners. Discover the meticulous process
+                        that gives Fyrza its unmistakable flavor.</p>
+                </div>
+
+                <div class="relative max-w-5xl mx-auto px-4 md:px-0">
+                    <!-- Center Line -->
+                    <div
+                        class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-brandRed/20 -translate-x-1/2 dark:bg-white/10">
+                    </div>
+
+                    <!-- Item 1 (Left) -->
+                    <div
+                        class="flex flex-col md:flex-row justify-between items-start md:items-center w-full mb-16 relative">
+                        <div class="w-full md:w-5/12 text-left md:text-right md:pr-12" data-aos="fade-right">
+                            <h3 class="text-2xl font-bold mb-4">1. The Harvest</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6">We source our peppers directly from small
+                                family farms ensuring peak ripeness and boldest natural flavor.</p>
+                            <img src="https://loremflickr.com/600/400/farming?lock=901" alt="Fresh pepper harvest"
+                                class="rounded-xl shadow-lg w-full md:ml-auto object-cover h-48">
+                        </div>
+                        <div
+                            class="hidden md:flex absolute left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-8 h-8 rounded-full bg-brandRed border-4 border-white dark:border-gray-900 z-10">
+                        </div>
+                        <div class="hidden md:block w-full md:w-5/12"></div>
+                    </div>
+
+                    <!-- Item 2 (Right) -->
+                    <div
+                        class="flex flex-col md:flex-row justify-between items-start md:items-center w-full mb-16 relative">
+                        <div class="hidden md:block w-full md:w-5/12"></div>
+                        <div
+                            class="hidden md:flex absolute left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-8 h-8 rounded-full bg-brandOrange border-4 border-white dark:border-gray-900 z-10">
+                        </div>
+                        <div class="w-full md:w-5/12 text-left md:pl-12" data-aos="fade-left">
+                            <h3 class="text-2xl font-bold mb-4">2. Slow Fermentation</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6">The pepper mash is aged in barrels for up
+                                to 30 days, allowing complex flavors to develop naturally.</p>
+                            <img src="https://loremflickr.com/600/400/barrels?lock=902" alt="Fermentation barrels"
+                                class="rounded-xl shadow-lg w-full object-cover h-48">
+                        </div>
+                    </div>
+
+                    <!-- Item 3 (Left) -->
+                    <div
+                        class="flex flex-col md:flex-row justify-between items-start md:items-center w-full mb-16 relative">
+                        <div class="w-full md:w-5/12 text-left md:text-right md:pr-12" data-aos="fade-right">
+                            <h3 class="text-2xl font-bold mb-4">3. The Blend</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6">We blend the aged mash with fresh herbs,
+                                vinegars, and spices to create our signature flavor profiles.</p>
+                            <img src="https://loremflickr.com/600/400/spices?lock=903" alt="Blending spices"
+                                class="rounded-xl shadow-lg w-full md:ml-auto object-cover h-48">
+                        </div>
+                        <div
+                            class="hidden md:flex absolute left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-8 h-8 rounded-full bg-brandRed border-4 border-white dark:border-gray-900 z-10">
+                        </div>
+                        <div class="hidden md:block w-full md:w-5/12"></div>
+                    </div>
+
+                    <!-- Item 4 (Right) -->
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center w-full relative">
+                        <div class="hidden md:block w-full md:w-5/12"></div>
+                        <div
+                            class="hidden md:flex absolute left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-8 h-8 rounded-full bg-brandOrange border-4 border-white dark:border-gray-900 z-10">
+                        </div>
+                        <div class="w-full md:w-5/12 text-left md:pl-12" data-aos="fade-left">
+                            <h3 class="text-2xl font-bold mb-4">4. Hand Bottled</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6">Every batch is tested, bottled, and labeled
+                                with care, ready to elevate your next meal.</p>
+                            <img src="https://loremflickr.com/600/400/bottling?lock=904" alt="Bottling process"
+                                class="rounded-xl shadow-lg w-full object-cover h-48">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: Community Favorites -->
+        <section class="py-24 bg-gray-50 dark:bg-brandCharcoal section-padding">
+            <div class="max-w-7xl mx-auto text-brandCharcoal dark:text-white">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-display mb-4">Community Favorites</h2>
+                    <p class="text-gray-600 dark:text-gray-400">Don't just take our word for it. Here's what the heat
+                        seekers are saying.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white dark:bg-black/20 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-white/10"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex text-yellow-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="italic text-gray-700 dark:text-gray-300 mb-6">"Garlic Fury is literally magic. It goes
+                            on eggs, pizza, and even mixed into my mayo for sandwiches. Incredible depth."</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <div>
+                                <h4 class="font-bold text-brandCharcoal dark:text-white">Garlic Fury</h4>
+                                <span class="text-xs text-brandRed font-semibold">Medium Heat</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&q=80"
+                                alt="Reviewer" class="w-12 h-12 rounded-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white dark:bg-black/20 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-white/10"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex text-yellow-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="italic text-gray-700 dark:text-gray-300 mb-6">"Finally a hot sauce that brings actual
+                            fire but doesn't ruin the flavor of the food. It enhances everything it touches."</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <div>
+                                <h4 class="font-bold text-brandCharcoal dark:text-white">Classic Red</h4>
+                                <span class="text-xs text-brandRed font-semibold">Hot</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&q=80"
+                                alt="Reviewer" class="w-12 h-12 rounded-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white dark:bg-black/20 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-white/10 sm:col-span-2 sm:max-w-md sm:mx-auto lg:col-span-1 lg:max-w-none w-full"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex text-yellow-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="italic text-gray-700 dark:text-gray-300 mb-6">"I collect extreme sauces, and Inferno
+                            Drop genuinely scared me. The flavor hits first, then the reaper creeps up. Brilliant."</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <div>
+                                <h4 class="font-bold text-brandCharcoal dark:text-white">Inferno Drop</h4>
+                                <span class="text-xs text-brandRed font-semibold">Extreme Heat</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80"
+                                alt="Reviewer" class="w-12 h-12 rounded-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: Stock Your Shelf -->
+        <section class="relative py-32 section-padding overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=1600&q=80"
+                    alt="Wholesale boxes" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto relative z-10 text-center" data-aos="fade-in">
+                <span class="text-brandRed font-bold tracking-widest text-sm uppercase mb-4 block">For Retailers &
+                    Restaurants</span>
+                <h2 class="text-5xl md:text-6xl font-display mb-6">Bring Fyrza to Your Customers.</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">Stock the shelves of your
+                    specialty store, grocery, or restaurant with a hot sauce brand that demands attention.</p>
+
+                <a href="wholesale.html" class="btn-primary text-lg px-8 py-4">Start a Wholesale Order</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <!-- Same as index.html -->
+    <footer
+        class="bg-white dark:bg-brandCharcoal text-brandCharcoal dark:text-white pt-20 pb-10 section-padding border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-fire-flame-curved text-brandRed text-3xl"></i>
+                        <span
+                            class="font-display font-black text-3xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
+                    </a>
+                    <p class="text-gray-600 dark:text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
+                        Small batch, artisan hot sauces built for flavor before fire. Crafted with natural ingredients
+                        for those who take their heat seriously.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors"
+                            aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors"
+                            aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Explore</h4>
+                    <ul class="space-y-4">
+                        <li><a href="products.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">All
+                                Sauces</a></li>
+                        <li><a href="recipes.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Recipes
+                                & Pairings</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Our
+                                Story</a></li>
+                        <li><a href="wholesale.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Wholesale</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Heat Levels</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Mild & Mellow</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-brandOrange transition-colors">Medium Kick</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Hot & Heavy</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors">Extreme Fire</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Contact</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-brandRed"></i>
+                            <span class="text-gray-600 dark:text-gray-400 text-sm">123 Pepper Lane,<br>Austin, TX
+                                78701</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brandRed"></i>
+                            <a href="mailto:hello@fyrza.com"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors text-sm">hello@fyrza.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-200 dark:border-gray-200 dark:border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; 2026 Fyrza Hot Sauce. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-gray-500 items-center">
+                    <a href="#" class="hover:text-brandRed dark:hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-brandRed dark:hover:text-white transition-colors">Terms of Service</a>
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                        class="ml-2 w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 flex items-center justify-center hover:bg-brandRed dark:hover:bg-brandRed hover:text-white dark:hover:text-white transition-colors shadow-sm"
+                        aria-label="Back to Top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

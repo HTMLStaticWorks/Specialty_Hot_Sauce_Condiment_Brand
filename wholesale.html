@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Fyrza - Wholesale Orders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brandRed: '#B22222', brandRedDark: '#8B0000', brandCharcoal: '#2C2C2C', brandOrange: '#FF4500', brandCream: '#FDFBF7' }, fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'] } } } }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body
+    class="antialiased overflow-x-hidden relative bg-brandCream dark:bg-[#121212] text-brandCharcoal dark:text-gray-100">
+
+    <!-- Global Header -->
+    <header id="globalHeader" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <i
+                            class="fa-solid fa-fire-flame-curved text-brandRed text-3xl group-hover:scale-110 transition-transform"></i>
+                        <span
+                            class="font-display font-black text-2xl tracking-tighter text-brandCharcoal dark:text-brandCream">Fyrza</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex space-x-8 items-center" aria-label="Main Navigation">
+                    <a href="index.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home</a>
+                    <a href="home-2.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home 2</a>
+                    <a href="about.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">About</a>
+                    <a href="products.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Products</a>
+                    <a href="recipes.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Recipes</a>
+                    <a href="wholesale.html" class="nav-link text-gray-900 dark:text-gray-100 py-2 active">Wholesale</a>
+                    <a href="contact.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Contact</a>
+                </nav>
+
+                <!-- Right Actions -->
+                <div class="hidden lg:flex items-center space-x-6">
+
+                    <button id="rtlToggle"
+                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors font-bold text-lg"
+                        aria-label="Toggle RTL">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button id="themeToggle"
+                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors"
+                        aria-label="Toggle Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <a href="products.html" class="btn-primary">
+                        Shop Flavors
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center gap-4">
+                    <button id="themeToggleMobile" class="text-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button id="mobileMenuBtn"
+                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed focus:outline-none"
+                        aria-label="Open Menu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden bg-white dark:bg-gray-900 absolute w-full border-b border-gray-100 dark:border-gray-800 shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Home</a>
+                <a href="home-2.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Home
+                    2</a>
+                <a href="about.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">About</a>
+                <a href="products.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Products</a>
+                <a href="recipes.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Recipes</a>
+                <a href="wholesale.html"
+                    class="block px-3 py-3 rounded-md text-base font-semibold text-brandRed bg-brandRed/10">Wholesale</a>
+                <a href="contact.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Contact</a>
+                <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <a href="products.html" class="btn-primary w-full text-center">Shop Flavors</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- SECTION 1: Wholesale Hero -->
+        <section class="relative py-32 overflow-hidden section-padding border-b border-gray-100 dark:border-gray-800">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.pexels.com/photos/1124038/pexels-photo-1124038.jpeg" alt="Wholesale Background"
+                    class="w-full h-full object-cover" data-aos="fade-in" data-aos-duration="1500">
+                <div class="absolute inset-0 bg-brandCream/50 dark:bg-[#121212]/70 backdrop-blur-[2px]"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto relative z-10 text-center" data-aos="fade-up">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-brandRed/10 text-brandRed font-semibold text-sm tracking-wider mb-6">WHOLESALE</span>
+                <h1 class="text-5xl md:text-7xl font-display font-black mb-6">Stock The <span
+                        class="text-brandOrange">Fire.</span></h1>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                    Partner with Fyrza and bring premium, artisan heat to your retail shelves or restaurant tables. We
+                    offer competitive pricing and unmatched quality.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Wholesale Collection -->
+        <section class="py-24 bg-gray-50 dark:bg-[#151515] section-padding">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-right">
+                    <div>
+                        <h2 class="text-4xl font-display mb-4">Retail Ready</h2>
+                        <p class="text-gray-600 dark:text-gray-400 max-w-xl">Our top-performing core lineup available
+                            for wholesale distribution.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Wholesale Product 1 -->
+                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700"
+                        data-aos="fade-up">
+                        <div class="h-48 bg-gray-100 dark:bg-gray-900 flex justify-center p-4">
+                            <img src="https://images.pexels.com/photos/36782569/pexels-photo-36782569.jpeg"
+                                alt="Wholesale Case 1" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-1">Smoked Ember</h3>
+                            <div
+                                class="flex justify-between items-center text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100 dark:border-gray-700">
+                                <span>5oz Bottle</span>
+                                <span class="font-bold text-brandRed">Medium Heat</span>
+                            </div>
+                            <ul class="text-sm space-y-2 text-gray-600 dark:text-gray-300">
+                                <li class="flex justify-between"><span>Units per case:</span> <strong>12</strong></li>
+                                <li class="flex justify-between"><span>Retail MSRP:</span> <strong>$12.99</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Wholesale Product 2 -->
+                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="h-48 bg-gray-100 dark:bg-gray-900 flex justify-center p-4">
+                            <img src="https://images.pexels.com/photos/29021749/pexels-photo-29021749.jpeg"
+                                alt="Wholesale Case 2" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-1">Mango Blaze</h3>
+                            <div
+                                class="flex justify-between items-center text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100 dark:border-gray-700">
+                                <span>5oz Bottle</span>
+                                <span class="font-bold text-brandRed">Hot Heat</span>
+                            </div>
+                            <ul class="text-sm space-y-2 text-gray-600 dark:text-gray-300">
+                                <li class="flex justify-between"><span>Units per case:</span> <strong>12</strong></li>
+                                <li class="flex justify-between"><span>Retail MSRP:</span> <strong>$14.99</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Wholesale Product 3 -->
+                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div class="h-48 bg-gray-100 dark:bg-gray-900 flex justify-center p-4">
+                            <img src="https://images.pexels.com/photos/32429217/pexels-photo-32429217.jpeg"
+                                alt="Wholesale Case 3" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-1">Inferno Drop</h3>
+                            <div
+                                class="flex justify-between items-center text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100 dark:border-gray-700">
+                                <span>5oz Bottle</span>
+                                <span class="font-bold text-brandRed">Extreme Heat</span>
+                            </div>
+                            <ul class="text-sm space-y-2 text-gray-600 dark:text-gray-300">
+                                <li class="flex justify-between"><span>Units per case:</span> <strong>12</strong></li>
+                                <li class="flex justify-between"><span>Retail MSRP:</span> <strong>$16.99</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Wholesale Product 4 -->
+                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div class="h-48 bg-gray-100 dark:bg-gray-900 flex justify-center p-4">
+                            <img src="https://images.pexels.com/photos/34079390/pexels-photo-34079390.jpeg"
+                                alt="Food Service Jug" class="h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-1">Food Service Jugs</h3>
+                            <div
+                                class="flex justify-between items-center text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100 dark:border-gray-700">
+                                <span>64oz Jug</span>
+                                <span class="font-bold text-gray-500">All Flavors</span>
+                            </div>
+                            <ul class="text-sm space-y-2 text-gray-600 dark:text-gray-300">
+                                <li class="flex justify-between"><span>Units per case:</span> <strong>4</strong></li>
+                                <li class="flex justify-between"><span>Target:</span> <strong>Restaurants</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: How Wholesale Works -->
+        <section class="py-24 bg-white dark:bg-gray-900 section-padding">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16" data-aos="zoom-in">
+                    <h2 class="text-4xl font-display mb-4">How It Works</h2>
+                    <p class="text-gray-600 dark:text-gray-400">A seamless process to get Fyrza on your shelves.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                    <!-- Connecting line (desktop) -->
+                    <div
+                        class="hidden md:block absolute top-12 left-12 right-12 h-0.5 bg-gray-200 dark:bg-gray-700 z-0">
+                    </div>
+
+                    <!-- Step 1 -->
+                    <div class="relative z-10 text-center" data-aos="fade-right" data-aos-delay="100">
+                        <div
+                            class="w-24 h-24 mx-auto bg-brandRed text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-4 border-white dark:border-gray-900">
+                            1</div>
+                        <h3 class="text-xl font-bold mb-2">Send Enquiry</h3>
+                        <p class="text-sm text-gray-500">Fill out the form below with your business details.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative z-10 text-center" data-aos="fade-right" data-aos-delay="200">
+                        <div
+                            class="w-24 h-24 mx-auto bg-white dark:bg-gray-800 text-brandCharcoal dark:text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-4 border-gray-200 dark:border-gray-700">
+                            2</div>
+                        <h3 class="text-xl font-bold mb-2">Choose Products</h3>
+                        <p class="text-sm text-gray-500">Review our wholesale catalog and pricing sheet.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative z-10 text-center" data-aos="fade-right" data-aos-delay="300">
+                        <div
+                            class="w-24 h-24 mx-auto bg-white dark:bg-gray-800 text-brandCharcoal dark:text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-4 border-gray-200 dark:border-gray-700">
+                            3</div>
+                        <h3 class="text-xl font-bold mb-2">Confirm Quantities</h3>
+                        <p class="text-sm text-gray-500">Finalize your case quantities and shipping details.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative z-10 text-center" data-aos="fade-right" data-aos-delay="400">
+                        <div
+                            class="w-24 h-24 mx-auto bg-white dark:bg-gray-800 text-brandCharcoal dark:text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-4 border-gray-200 dark:border-gray-700">
+                            4</div>
+                        <h3 class="text-xl font-bold mb-2">Receive Shipment</h3>
+                        <p class="text-sm text-gray-500">Fast fulfillment straight to your store or kitchen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: Wholesale Enquiry Form -->
+        <section id="enquiry-form"
+            class="py-24 bg-gray-50 dark:bg-brandCharcoal text-brandCharcoal dark:text-white section-padding relative overflow-hidden">
+            <div class="max-w-4xl mx-auto relative z-10">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-display mb-4 text-brandCharcoal dark:text-white">Request
+                        Wholesale Pricing</h2>
+                    <p class="text-gray-600 dark:text-gray-400">Fill out the details below and our team will be in touch
+                        within 24 hours.</p>
+                </div>
+
+                <form id="wholesaleForm"
+                    class="bg-white dark:bg-white/5 p-8 md:p-12 rounded-3xl border border-gray-200 dark:border-white/10 shadow-xl dark:shadow-none backdrop-blur-md"
+                    novalidate data-aos="fade-up" data-aos-delay="100">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Business Name *</label>
+                            <input type="text" required
+                                class="w-full bg-gray-50 dark:bg-white/10 border border-gray-200 dark:border-white/20 rounded-lg py-3 px-4 text-brandCharcoal dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-brandRed transition-colors">
+                            <span class="error-msg text-red-500 text-xs mt-1 hidden">This field is required</span>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Contact Name *</label>
+                            <input type="text" required
+                                class="w-full bg-gray-50 dark:bg-white/10 border border-gray-200 dark:border-white/20 rounded-lg py-3 px-4 text-brandCharcoal dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-brandRed transition-colors">
+                            <span class="error-msg text-red-500 text-xs mt-1 hidden">This field is required</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Email Address *</label>
+                            <input type="email" required
+                                class="w-full bg-gray-50 dark:bg-white/10 border border-gray-200 dark:border-white/20 rounded-lg py-3 px-4 text-brandCharcoal dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-brandRed transition-colors">
+                            <span class="error-msg text-red-500 text-xs mt-1 hidden">Valid email is required</span>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Phone Number</label>
+                            <input type="tel"
+                                class="w-full bg-gray-50 dark:bg-white/10 border border-gray-200 dark:border-white/20 rounded-lg py-3 px-4 text-brandCharcoal dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-brandRed transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Business Type *</label>
+                            <select required
+                                class="w-full bg-gray-50 dark:bg-[#3c3c3c] border border-gray-200 dark:border-white/20 rounded-lg py-3 px-4 text-brandCharcoal dark:text-white focus:outline-none focus:border-brandRed transition-colors appearance-none">
+                                <option value="">Select one...</option>
+                                <option value="retail">Retail Store</option>
+                                <option value="restaurant">Restaurant / Food Service</option>
+                                <option value="distributor">Distributor</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-msg text-red-500 text-xs mt-1 hidden">Please select a business
+                                type</span>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Country / Region *</label>
+                            <input type="text" required
+                                class="w-full bg-gray-50 dark:bg-white/10 border border-gray-200 dark:border-white/20 rounded-lg py-3 px-4 text-brandCharcoal dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-brandRed transition-colors">
+                            <span class="error-msg text-red-500 text-xs mt-1 hidden">This field is required</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Estimated Monthly Quantity (Cases)</label>
+                            <input type="number"
+                                class="w-full bg-gray-50 dark:bg-white/10 border border-gray-200 dark:border-white/20 rounded-lg py-3 px-4 text-brandCharcoal dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-brandRed transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Products Interested In *</label>
+                            <select required
+                                class="w-full bg-gray-50 dark:bg-[#3c3c3c] border border-gray-200 dark:border-white/20 rounded-lg py-3 px-4 text-brandCharcoal dark:text-white focus:outline-none focus:border-brandRed transition-colors appearance-none">
+                                <option value="">Select one...</option>
+                                <option value="all">Full Lineup</option>
+                                <option value="mild_med">Mild & Medium Only</option>
+                                <option value="hot_extreme">Hot & Extreme Only</option>
+                                <option value="foodservice">Food Service Jugs</option>
+                            </select>
+                            <span class="error-msg text-red-500 text-xs mt-1 hidden">Please make a selection</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <label class="block text-sm font-semibold mb-2">Additional Message / Questions</label>
+                        <textarea rows="4"
+                            class="w-full bg-gray-50 dark:bg-white/10 border border-gray-200 dark:border-white/20 rounded-lg py-3 px-4 text-brandCharcoal dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-brandRed transition-colors resize-none"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary w-full md:w-auto px-12 py-4 text-lg">
+                            Request Wholesale Pricing
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <!-- Content omitted for brevity, same as index -->
+    <footer
+        class="bg-white dark:bg-brandCharcoal text-brandCharcoal dark:text-white pt-20 pb-10 section-padding border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-fire-flame-curved text-brandRed text-3xl"></i>
+                        <span
+                            class="font-display font-black text-3xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
+                    </a>
+                    <p class="text-gray-600 dark:text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
+                        Small batch, artisan hot sauces built for flavor before fire. Crafted with natural ingredients
+                        for those who take their heat seriously.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors"
+                            aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors"
+                            aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Explore</h4>
+                    <ul class="space-y-4">
+                        <li><a href="products.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">All
+                                Sauces</a></li>
+                        <li><a href="recipes.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Recipes
+                                & Pairings</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Our
+                                Story</a></li>
+                        <li><a href="wholesale.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Wholesale</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Heat Levels</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Mild & Mellow</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-brandOrange transition-colors">Medium Kick</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Hot & Heavy</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors">Extreme Fire</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Contact</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-brandRed"></i>
+                            <span class="text-gray-600 dark:text-gray-400 text-sm">123 Pepper Lane,<br>Austin, TX
+                                78701</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brandRed"></i>
+                            <a href="mailto:hello@fyrza.com"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors text-sm">hello@fyrza.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-200 dark:border-gray-200 dark:border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; 2026 Fyrza Hot Sauce. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-gray-500 items-center">
+                    <a href="#" class="hover:text-brandRed dark:hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-brandRed dark:hover:text-white transition-colors">Terms of Service</a>
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                        class="ml-2 w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 flex items-center justify-center hover:bg-brandRed dark:hover:bg-brandRed hover:text-white dark:hover:text-white transition-colors shadow-sm"
+                        aria-label="Back to Top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/forms.js"></script>
+</body>
+
+</html>

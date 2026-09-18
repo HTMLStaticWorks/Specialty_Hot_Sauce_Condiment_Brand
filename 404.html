@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Fyrza - 404 Not Found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brandRed: '#B22222', brandRedDark: '#8B0000', brandCharcoal: '#2C2C2C', brandOrange: '#FF4500', brandCream: '#FDFBF7' }, fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'] } } } }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body class="antialiased overflow-x-hidden relative bg-brandCream dark:bg-[#121212] flex flex-col min-h-screen">
+
+    <!-- Global Header -->
+    <header id="globalHeader" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <i
+                            class="fa-solid fa-fire-flame-curved text-brandRed text-3xl group-hover:scale-110 transition-transform"></i>
+                        <span
+                            class="font-display font-black text-2xl tracking-tighter text-brandCharcoal dark:text-brandCream">Fyrza</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex space-x-8 items-center" aria-label="Main Navigation">
+                    <a href="index.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home</a>
+                    <a href="home-2.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home 2</a>
+                    <a href="about.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">About</a>
+                    <a href="products.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Products</a>
+                    <a href="recipes.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Recipes</a>
+                    <a href="wholesale.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Wholesale</a>
+                    <a href="contact.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Contact</a>
+                </nav>
+
+                <!-- Right Actions -->
+                <div class="hidden lg:flex items-center space-x-6">
+
+                    <button id="rtlToggle"
+                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors font-bold text-lg"
+                        aria-label="Toggle RTL">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button id="themeToggle"
+                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors"
+                        aria-label="Toggle Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <a href="products.html" class="btn-primary">
+                        Shop Flavors
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center gap-4">
+                    <button id="themeToggleMobile" class="text-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button id="mobileMenuBtn"
+                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed focus:outline-none"
+                        aria-label="Open Menu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden bg-white dark:bg-gray-900 absolute w-full border-b border-gray-100 dark:border-gray-800 shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Home</a>
+                <a href="home-2.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Home
+                    2</a>
+                <a href="about.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">About</a>
+                <a href="products.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Products</a>
+                <a href="recipes.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Recipes</a>
+                <a href="wholesale.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Wholesale</a>
+                <a href="contact.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Contact</a>
+                <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <a href="products.html" class="btn-primary w-full text-center">Shop Flavors</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center pt-20 pb-12 section-padding relative overflow-hidden bg-brandCharcoal dark:bg-black text-white">
+        <!-- Background elements -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://loremflickr.com/1600/900/fire,abstract?lock=600" alt="Flames" class="w-full h-full object-cover opacity-20 mix-blend-color-dodge">
+        </div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brandRed rounded-full filter blur-[150px] opacity-20 animate-pulse"></div>
+
+        <div class="relative z-10 text-center max-w-2xl mx-auto">
+            <h1 class="text-[150px] md:text-[200px] font-display font-black leading-none text-transparent bg-clip-text bg-gradient-to-b from-brandRed to-brandOrange mb-4">404</h1>
+            <h2 class="text-4xl font-display font-bold mb-6">Too Hot to Handle.</h2>
+            <p class="text-xl text-gray-400 mb-10">It looks like this page burned away. The link might be broken or the page may have been removed.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html" class="btn-outline border-white text-white hover:bg-white hover:text-brandCharcoal text-lg">Back to Home</a>
+                <a href="products.html" class="btn-primary text-lg border-2 border-brandRed">Explore Products</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-white dark:bg-brandCharcoal text-brandCharcoal dark:text-white pt-20 pb-10 section-padding border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-fire-flame-curved text-brandRed text-3xl"></i>
+                        <span class="font-display font-black text-3xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
+                    </a>
+                    <p class="text-gray-600 dark:text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
+                        Small batch, artisan hot sauces built for flavor before fire. Crafted with natural ingredients for those who take their heat seriously.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Explore</h4>
+                    <ul class="space-y-4">
+                        <li><a href="products.html" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">All Sauces</a></li>
+                        <li><a href="recipes.html" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Recipes & Pairings</a></li>
+                        <li><a href="about.html" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Our Story</a></li>
+                        <li><a href="wholesale.html" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Wholesale</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Heat Levels</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Mild & Mellow</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-brandOrange transition-colors">Medium Kick</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Hot & Heavy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors">Extreme Fire</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Contact</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-brandRed"></i>
+                            <span class="text-gray-600 dark:text-gray-400 text-sm">123 Pepper Lane,<br>Austin, TX 78701</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brandRed"></i>
+                            <a href="mailto:hello@fyrza.com" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors text-sm">hello@fyrza.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-200 dark:border-gray-200 dark:border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; 2026 Fyrza Hot Sauce. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-gray-500 items-center">
+                    <a href="#" class="hover:text-brandRed dark:hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-brandRed dark:hover:text-white transition-colors">Terms of Service</a>
+                                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="ml-2 w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 flex items-center justify-center hover:bg-brandRed dark:hover:bg-brandRed hover:text-white dark:hover:text-white transition-colors shadow-sm" aria-label="Back to Top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
