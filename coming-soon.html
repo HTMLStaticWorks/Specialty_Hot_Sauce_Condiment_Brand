@@ -34,7 +34,7 @@
                 </div>
 
                 <!-- Desktop Nav -->
-                <nav class="hidden lg:flex space-x-8 items-center" aria-label="Main Navigation">
+                <nav class="hidden lg:flex gap-8 items-center" aria-label="Main Navigation">
                     <a href="index.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home</a>
                     <a href="home-2.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home 2</a>
                     <a href="about.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">About</a>
@@ -45,15 +45,15 @@
                 </nav>
 
                 <!-- Right Actions -->
-                <div class="hidden lg:flex items-center space-x-6">
+                <div class="hidden lg:flex items-center gap-6">
 
                     <button id="rtlToggle"
-                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors font-bold text-lg"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
                         aria-label="Toggle RTL">
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                     </button>
                     <button id="themeToggle"
-                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
                         aria-label="Toggle Dark Mode">
                         <i class="fa-solid fa-moon"></i>
                     </button>
@@ -64,7 +64,7 @@
 
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden flex items-center gap-4">
-                    <button id="themeToggleMobile" class="text-gray-600 dark:text-gray-300">
+                    <button id="themeToggleMobile" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors">
                         <i class="fa-solid fa-moon"></i>
                     </button>
                     <button id="mobileMenuBtn"
@@ -105,7 +105,7 @@
     <main class="flex-grow flex items-center justify-center relative overflow-hidden section-padding">
         <!-- Background Silhouette Image -->
         <div class="absolute inset-0 z-0">
-            <img src="https://loremflickr.com/1600/1200/dark,bottle?lock=700" alt="Mystery Bottle" class="w-full h-full object-cover opacity-20 mix-blend-luminosity filter blur-sm scale-105">
+            <img src="https://images.unsplash.com/photo-1598515753229-411a7db8b7a0?w=1600&q=80" alt="Mystery Bottle" class="w-full h-full object-cover opacity-20 mix-blend-luminosity filter blur-sm scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-[#0a0a0a]"></div>
         </div>
 
@@ -162,22 +162,31 @@
             }
         });
     </script>
-<footer class="bg-white dark:bg-brandCharcoal text-brandCharcoal dark:text-white pt-20 pb-10 section-padding border-t border-gray-200 dark:border-gray-800">
+<footer
+        class="bg-white dark:bg-brandCharcoal text-brandCharcoal dark:text-white pt-20 pb-10 section-padding border-t border-gray-200 dark:border-gray-800">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <!-- Brand -->
                 <div class="lg:col-span-1">
                     <a href="index.html" class="flex items-center gap-2 mb-6">
                         <i class="fa-solid fa-fire-flame-curved text-brandRed text-3xl"></i>
-                        <span class="font-display font-black text-3xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
+                        <span
+                            class="font-display font-black text-2xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
                     </a>
                     <p class="text-gray-600 dark:text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
-                        Small batch, artisan hot sauces built for flavor before fire. Crafted with natural ingredients for those who take their heat seriously.
+                        Small batch, artisan hot sauces built for flavor before fire. Crafted with natural ingredients
+                        for those who take their heat seriously.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors"
+                            aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors"
+                            aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
 
@@ -185,10 +194,18 @@
                 <div>
                     <h4 class="font-display font-bold text-lg mb-6">Explore</h4>
                     <ul class="space-y-4">
-                        <li><a href="products.html" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">All Sauces</a></li>
-                        <li><a href="recipes.html" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Recipes & Pairings</a></li>
-                        <li><a href="about.html" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Our Story</a></li>
-                        <li><a href="wholesale.html" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Wholesale</a></li>
+                        <li><a href="products.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">All
+                                Sauces</a></li>
+                        <li><a href="recipes.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Recipes
+                                & Pairings</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Our
+                                Story</a></li>
+                        <li><a href="wholesale.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Wholesale</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -196,9 +213,12 @@
                 <div>
                     <h4 class="font-display font-bold text-lg mb-6">Heat Levels</h4>
                     <ul class="space-y-4">
-                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Mild & Mellow</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-brandOrange transition-colors">Medium Kick</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Hot & Heavy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Mild & Mellow</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Medium Kick</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Hot & Heavy</a>
+                        </li>
                         <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors">Extreme Fire</a></li>
                     </ul>
                 </div>
@@ -209,25 +229,30 @@
                     <ul class="space-y-4">
                         <li class="flex items-start gap-3">
                             <i class="fa-solid fa-location-dot mt-1 text-brandRed"></i>
-                            <span class="text-gray-600 dark:text-gray-400 text-sm">123 Pepper Lane,<br>Austin, TX 78701</span>
+                            <span class="text-gray-600 dark:text-gray-400 text-sm">123 Pepper Lane,<br>Austin, TX
+                                78701</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <i class="fa-solid fa-envelope text-brandRed"></i>
-                            <a href="mailto:hello@fyrza.com" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors text-sm">hello@fyrza.com</a>
+                            <a href="mailto:hello@fyrza.com"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors text-sm">hello@fyrza.com</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="border-t border-gray-200 dark:border-gray-200 dark:border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div
+                class="border-t border-gray-200 dark:border-gray-200 dark:border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-gray-500 text-sm">&copy; 2026 Fyrza Hot Sauce. All rights reserved.</p>
                 <div class="flex gap-6 text-sm text-gray-500 items-center">
                     <a href="#" class="hover:text-brandRed dark:hover:text-white transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-brandRed dark:hover:text-white transition-colors">Terms of Service</a>
-                                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="ml-2 w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 flex items-center justify-center hover:bg-brandRed dark:hover:bg-brandRed hover:text-white dark:hover:text-white transition-colors shadow-sm" aria-label="Back to Top">
-                    <i class="fa-solid fa-arrow-up"></i>
-                </button>
-            </div>
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                        class="ml-2 w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 flex items-center justify-center hover:bg-brandRed dark:hover:bg-brandRed hover:text-white dark:hover:text-white transition-colors shadow-sm"
+                        aria-label="Back to Top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </footer>

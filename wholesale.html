@@ -37,7 +37,7 @@
                 </div>
 
                 <!-- Desktop Nav -->
-                <nav class="hidden lg:flex space-x-8 items-center" aria-label="Main Navigation">
+                <nav class="hidden lg:flex gap-8 items-center" aria-label="Main Navigation">
                     <a href="index.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home</a>
                     <a href="home-2.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home 2</a>
                     <a href="about.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">About</a>
@@ -48,15 +48,15 @@
                 </nav>
 
                 <!-- Right Actions -->
-                <div class="hidden lg:flex items-center space-x-6">
+                <div class="hidden lg:flex items-center gap-6">
 
                     <button id="rtlToggle"
-                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors font-bold text-lg"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
                         aria-label="Toggle RTL">
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                     </button>
                     <button id="themeToggle"
-                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
                         aria-label="Toggle Dark Mode">
                         <i class="fa-solid fa-moon"></i>
                     </button>
@@ -67,7 +67,8 @@
 
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden flex items-center gap-4">
-                    <button id="themeToggleMobile" class="text-gray-600 dark:text-gray-300">
+                    <button id="themeToggleMobile"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors">
                         <i class="fa-solid fa-moon"></i>
                     </button>
                     <button id="mobileMenuBtn"
@@ -95,7 +96,7 @@
                 <a href="recipes.html"
                     class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Recipes</a>
                 <a href="wholesale.html"
-                    class="block px-3 py-3 rounded-md text-base font-semibold text-brandRed bg-brandRed/10">Wholesale</a>
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Wholesale</a>
                 <a href="contact.html"
                     class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Contact</a>
                 <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
@@ -112,14 +113,14 @@
             <div class="absolute inset-0 z-0">
                 <img src="https://images.pexels.com/photos/1124038/pexels-photo-1124038.jpeg" alt="Wholesale Background"
                     class="w-full h-full object-cover" data-aos="fade-in" data-aos-duration="1500">
-                <div class="absolute inset-0 bg-brandCream/50 dark:bg-[#121212]/70 backdrop-blur-[2px]"></div>
+                <div class="absolute inset-0 bg-brandCream/60 dark:bg-[#121212]/70 backdrop-blur-[2px]"></div>
             </div>
 
             <div class="max-w-7xl mx-auto relative z-10 text-center" data-aos="fade-up">
                 <span
                     class="inline-block py-1 px-3 rounded-full bg-brandRed/10 text-brandRed font-semibold text-sm tracking-wider mb-6">WHOLESALE</span>
                 <h1 class="text-5xl md:text-7xl font-display font-black mb-6">Stock The <span
-                        class="text-brandOrange">Fire.</span></h1>
+                        class="text-brandRed">Fire.</span></h1>
                 <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
                     Partner with Fyrza and bring premium, artisan heat to your retail shelves or restaurant tables. We
                     offer competitive pricing and unmatched quality.
@@ -139,14 +140,13 @@
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
                     <!-- Wholesale Product 1 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700"
+                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col"
                         data-aos="fade-up">
-                        <div class="h-48 bg-gray-100 dark:bg-gray-900 flex justify-center p-4">
-                            <img src="https://images.pexels.com/photos/36782569/pexels-photo-36782569.jpeg"
-                                alt="Wholesale Case 1" class="h-full object-contain">
-                        </div>
-                        <div class="p-6">
+                        <img src="https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?w=600&q=80"
+                            alt="Smoked Ember" class="w-full h-48 object-cover m-0 p-0 block">
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Smoked Ember</h3>
                             <div
                                 class="flex justify-between items-center text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100 dark:border-gray-700">
@@ -161,13 +161,11 @@
                     </div>
 
                     <!-- Wholesale Product 2 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700"
+                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col"
                         data-aos="fade-up" data-aos-delay="100">
-                        <div class="h-48 bg-gray-100 dark:bg-gray-900 flex justify-center p-4">
-                            <img src="https://images.pexels.com/photos/29021749/pexels-photo-29021749.jpeg"
-                                alt="Wholesale Case 2" class="h-full object-contain">
-                        </div>
-                        <div class="p-6">
+                        <img src="https://images.pexels.com/photos/5817621/pexels-photo-5817621.jpeg" alt="Mango Blaze"
+                            class="w-full h-48 object-cover m-0 p-0 block">
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Mango Blaze</h3>
                             <div
                                 class="flex justify-between items-center text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100 dark:border-gray-700">
@@ -182,13 +180,11 @@
                     </div>
 
                     <!-- Wholesale Product 3 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700"
+                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col"
                         data-aos="fade-up" data-aos-delay="200">
-                        <div class="h-48 bg-gray-100 dark:bg-gray-900 flex justify-center p-4">
-                            <img src="https://images.pexels.com/photos/32429217/pexels-photo-32429217.jpeg"
-                                alt="Wholesale Case 3" class="h-full object-contain">
-                        </div>
-                        <div class="p-6">
+                        <img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?w=600&q=80"
+                            alt="Inferno Drop" class="w-full h-48 object-cover m-0 p-0 block">
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Inferno Drop</h3>
                             <div
                                 class="flex justify-between items-center text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100 dark:border-gray-700">
@@ -203,13 +199,11 @@
                     </div>
 
                     <!-- Wholesale Product 4 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700"
+                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col"
                         data-aos="fade-up" data-aos-delay="300">
-                        <div class="h-48 bg-gray-100 dark:bg-gray-900 flex justify-center p-4">
-                            <img src="https://images.pexels.com/photos/34079390/pexels-photo-34079390.jpeg"
-                                alt="Food Service Jug" class="h-full object-contain">
-                        </div>
-                        <div class="p-6">
+                        <img src="https://images.pexels.com/photos/34079390/pexels-photo-34079390.jpeg"
+                            alt="Food Service Jugs" class="w-full h-48 object-cover m-0 p-0 block">
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Food Service Jugs</h3>
                             <div
                                 class="flex justify-between items-center text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100 dark:border-gray-700">
@@ -222,6 +216,7 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -245,7 +240,7 @@
                         <div
                             class="w-24 h-24 mx-auto bg-brandRed text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-4 border-white dark:border-gray-900">
                             1</div>
-                        <h3 class="text-xl font-bold mb-2">Send Enquiry</h3>
+                        <h3 class="text-xl font-bold mb-2 min-h-[3.5rem]">Send Enquiry</h3>
                         <p class="text-sm text-gray-500">Fill out the form below with your business details.</p>
                     </div>
 
@@ -254,7 +249,7 @@
                         <div
                             class="w-24 h-24 mx-auto bg-white dark:bg-gray-800 text-brandCharcoal dark:text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-4 border-gray-200 dark:border-gray-700">
                             2</div>
-                        <h3 class="text-xl font-bold mb-2">Choose Products</h3>
+                        <h3 class="text-xl font-bold mb-2 min-h-[3.5rem]">Choose Products</h3>
                         <p class="text-sm text-gray-500">Review our wholesale catalog and pricing sheet.</p>
                     </div>
 
@@ -263,7 +258,7 @@
                         <div
                             class="w-24 h-24 mx-auto bg-white dark:bg-gray-800 text-brandCharcoal dark:text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-4 border-gray-200 dark:border-gray-700">
                             3</div>
-                        <h3 class="text-xl font-bold mb-2">Confirm Quantities</h3>
+                        <h3 class="text-xl font-bold mb-2 min-h-[3.5rem]">Confirm Quantities</h3>
                         <p class="text-sm text-gray-500">Finalize your case quantities and shipping details.</p>
                     </div>
 
@@ -272,7 +267,7 @@
                         <div
                             class="w-24 h-24 mx-auto bg-white dark:bg-gray-800 text-brandCharcoal dark:text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-4 border-gray-200 dark:border-gray-700">
                             4</div>
-                        <h3 class="text-xl font-bold mb-2">Receive Shipment</h3>
+                        <h3 class="text-xl font-bold mb-2 min-h-[3.5rem]">Receive Shipment</h3>
                         <p class="text-sm text-gray-500">Fast fulfillment straight to your store or kitchen.</p>
                     </div>
                 </div>
@@ -371,7 +366,8 @@
                     </div>
 
                     <div class="text-center">
-                        <button type="submit" class="btn-primary w-full md:w-auto px-12 py-4 text-lg">
+                        <button type="submit"
+                            class="btn-primary w-full md:w-auto px-4 sm:px-12 py-4 text-base sm:text-lg whitespace-nowrap">
                             Request Wholesale Pricing
                         </button>
                     </div>
@@ -392,7 +388,7 @@
                     <a href="index.html" class="flex items-center gap-2 mb-6">
                         <i class="fa-solid fa-fire-flame-curved text-brandRed text-3xl"></i>
                         <span
-                            class="font-display font-black text-3xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
+                            class="font-display font-black text-2xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
                     </a>
                     <p class="text-gray-600 dark:text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
                         Small batch, artisan hot sauces built for flavor before fire. Crafted with natural ingredients
@@ -436,9 +432,9 @@
                     <ul class="space-y-4">
                         <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Mild & Mellow</a>
                         </li>
-                        <li><a href="#" class="text-gray-400 hover:text-brandOrange transition-colors">Medium Kick</a>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Medium Kick</a>
                         </li>
-                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Hot & Heavy</a>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Hot & Heavy</a>
                         </li>
                         <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors">Extreme Fire</a></li>
                     </ul>

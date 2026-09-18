@@ -65,7 +65,7 @@
                 </div>
 
                 <!-- Desktop Nav -->
-                <nav class="hidden lg:flex space-x-8 items-center" aria-label="Main Navigation">
+                <nav class="hidden lg:flex gap-8 items-center" aria-label="Main Navigation">
                     <a href="index.html" class="nav-link text-gray-900 dark:text-gray-100 py-2 active">Home</a>
                     <a href="home-2.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home 2</a>
                     <a href="about.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">About</a>
@@ -76,15 +76,15 @@
                 </nav>
 
                 <!-- Right Actions -->
-                <div class="hidden lg:flex items-center space-x-6">
+                <div class="hidden lg:flex items-center gap-6">
 
                     <button id="rtlToggle"
-                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors font-bold text-lg"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
                         aria-label="Toggle RTL">
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                     </button>
                     <button id="themeToggle"
-                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
                         aria-label="Toggle Dark Mode">
                         <i class="fa-solid fa-moon"></i>
                     </button>
@@ -95,7 +95,7 @@
 
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden flex items-center gap-4">
-                    <button id="themeToggleMobile" class="text-gray-600 dark:text-gray-300">
+                    <button id="themeToggleMobile" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors">
                         <i class="fa-solid fa-moon"></i>
                     </button>
                     <button id="mobileMenuBtn"
@@ -141,7 +141,7 @@
                 <img src="https://images.pexels.com/photos/1124038/pexels-photo-1124038.jpeg"
                     alt="Spicy food background" class="w-full h-full object-cover" data-aos="fade-in"
                     data-aos-duration="1500">
-                <div class="absolute inset-0 bg-brandCream/50 dark:bg-[#121212]/70 backdrop-blur-[2px]"></div>
+                <div class="absolute inset-0 bg-brandCream/60 dark:bg-[#121212]/70 backdrop-blur-[2px]"></div>
             </div>
 
             <div class="max-w-7xl mx-auto w-full relative z-10 grid lg:grid-cols-2 gap-12 items-center">
@@ -150,8 +150,8 @@
                         class="inline-block py-1 px-3 rounded-full bg-brandRed/10 text-brandRed font-semibold text-sm tracking-wider mb-6">SMALL
                         BATCH • BIG FLAVOR</span>
                     <h1 class="text-5xl sm:text-6xl lg:text-7xl font-display font-black leading-[1.1] mb-6">
-                        Heat That Hits <span class="text-brandOrange inline-block relative">Different.<svg
-                                class="absolute w-full h-3 -bottom-1 left-0 text-brandOrange opacity-50"
+                        Heat That Hits <span class="text-brandRed inline-block relative">Different.<svg
+                                class="absolute w-full h-3 -bottom-1 left-0 text-brandRed opacity-50"
                                 viewBox="0 0 100 10" preserveAspectRatio="none">
                                 <path d="M0 5 Q 50 15 100 5" stroke="currentColor" stroke-width="4" fill="none" />
                             </svg></span>
@@ -180,7 +180,7 @@
                         data-aos="fade-left" data-aos-delay="500">
                         <div
                             class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg border border-gray-100 dark:border-gray-700 flex items-center gap-2">
-                            <i class="fa-solid fa-leaf text-green-500"></i>
+                            <i class="fa-solid fa-leaf text-brandRed"></i>
                             <span class="text-sm font-semibold">Natural Ingredients</span>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                         data-aos="fade-right" data-aos-delay="600">
                         <div
                             class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg border border-gray-100 dark:border-gray-700 flex items-center gap-2">
-                            <i class="fa-solid fa-mortar-pestle text-brandOrange"></i>
+                            <i class="fa-solid fa-mortar-pestle text-brandRed"></i>
                             <span class="text-sm font-semibold">Small Batch</span>
                         </div>
                     </div>
@@ -212,30 +212,30 @@
                     </div>
 
                     <!-- Level 1 -->
-                    <div class="group flex flex-col items-center text-center cursor-pointer" data-aos="fade-up"
+                    <div class="group flex flex-col items-center text-center cursor-pointer relative hover:z-50" data-aos="fade-up"
                         data-aos-delay="100">
                         <div
                             class="w-20 h-20 rounded-full bg-gray-50 dark:bg-gray-800 border-4 border-white dark:border-gray-900 shadow-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110 overflow-hidden relative">
                             <img src="https://images.pexels.com/photos/2893525/pexels-photo-2893525.jpeg" alt="Mellow Peppers"
                                 class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity">
-                            <i class="fa-solid fa-fire text-yellow-400 text-2xl relative z-10 drop-shadow-md"></i>
+                            <i class="fa-solid fa-fire text-brandRed text-2xl relative z-10 drop-shadow-md"></i>
                         </div>
                         <h3 class="text-lg font-bold mb-1">Mellow</h3>
                         <span class="text-xs font-semibold text-brandRed bg-brandRed/10 px-2 py-1 rounded-full mb-2">Lvl
                             1</span>
                         <p
-                            class="text-sm text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity absolute mt-32 w-48 bg-white dark:bg-gray-800 p-3 rounded shadow-lg pointer-events-none z-20">
+                            class="text-sm text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity absolute top-full mt-2 w-48 bg-white dark:bg-gray-800 p-3 rounded shadow-lg pointer-events-none z-20">
                             Perfect for eggs & mild tacos.</p>
                     </div>
 
                     <!-- Level 2 -->
-                    <div class="group flex flex-col items-center text-center cursor-pointer" data-aos="fade-up"
+                    <div class="group flex flex-col items-center text-center cursor-pointer relative hover:z-50" data-aos="fade-up"
                         data-aos-delay="200">
                         <div
                             class="w-20 h-20 rounded-full bg-gray-50 dark:bg-gray-800 border-4 border-white dark:border-gray-900 shadow-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110 overflow-hidden relative">
                             <img src="https://images.pexels.com/photos/32934476/pexels-photo-32934476.jpeg" alt="Medium Peppers"
                                 class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity">
-                            <div class="relative z-10 flex text-orange-400 drop-shadow-md">
+                            <div class="relative z-10 flex text-brandRed drop-shadow-md">
                                 <i class="fa-solid fa-fire"></i><i class="fa-solid fa-fire -ml-1"></i>
                             </div>
                         </div>
@@ -243,18 +243,18 @@
                         <span class="text-xs font-semibold text-brandRed bg-brandRed/10 px-2 py-1 rounded-full mb-2">Lvl
                             2</span>
                         <p
-                            class="text-sm text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity absolute mt-32 w-48 bg-white dark:bg-gray-800 p-3 rounded shadow-lg pointer-events-none z-20">
+                            class="text-sm text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity absolute top-full mt-2 w-48 bg-white dark:bg-gray-800 p-3 rounded shadow-lg pointer-events-none z-20">
                             A warm kick for pizza & burgers.</p>
                     </div>
 
                     <!-- Level 3 -->
-                    <div class="group flex flex-col items-center text-center cursor-pointer" data-aos="fade-up"
+                    <div class="group flex flex-col items-center text-center cursor-pointer relative hover:z-50" data-aos="fade-up"
                         data-aos-delay="300">
                         <div
                             class="w-20 h-20 rounded-full bg-gray-50 dark:bg-gray-800 border-4 border-white dark:border-gray-900 shadow-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110 overflow-hidden relative">
                             <img src="https://images.pexels.com/photos/9841263/pexels-photo-9841263.jpeg" alt="Hot Peppers"
                                 class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity">
-                            <div class="relative z-10 flex text-brandOrange drop-shadow-md">
+                            <div class="relative z-10 flex text-brandRed drop-shadow-md">
                                 <i class="fa-solid fa-fire"></i><i class="fa-solid fa-fire -ml-1"></i><i
                                     class="fa-solid fa-fire -ml-1"></i>
                             </div>
@@ -263,12 +263,12 @@
                         <span class="text-xs font-semibold text-brandRed bg-brandRed/10 px-2 py-1 rounded-full mb-2">Lvl
                             3</span>
                         <p
-                            class="text-sm text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity absolute mt-32 w-48 bg-white dark:bg-gray-800 p-3 rounded shadow-lg pointer-events-none z-20">
+                            class="text-sm text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity absolute top-full mt-2 w-48 bg-white dark:bg-gray-800 p-3 rounded shadow-lg pointer-events-none z-20">
                             Serious heat for wings & chili.</p>
                     </div>
 
                     <!-- Level 4 -->
-                    <div class="group flex flex-col items-center text-center cursor-pointer" data-aos="fade-up"
+                    <div class="group flex flex-col items-center text-center cursor-pointer relative hover:z-50" data-aos="fade-up"
                         data-aos-delay="400">
                         <div
                             class="w-20 h-20 rounded-full bg-gray-50 dark:bg-gray-800 border-4 border-white dark:border-gray-900 shadow-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110 overflow-hidden relative">
@@ -283,7 +283,7 @@
                         <span class="text-xs font-semibold text-brandRed bg-brandRed/10 px-2 py-1 rounded-full mb-2">Lvl
                             4</span>
                         <p
-                            class="text-sm text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity absolute mt-32 w-48 bg-white dark:bg-gray-800 p-3 rounded shadow-lg pointer-events-none z-20">
+                            class="text-sm text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity absolute top-full mt-2 w-48 bg-white dark:bg-gray-800 p-3 rounded shadow-lg pointer-events-none z-20">
                             Sweat-inducing bold flavor.</p>
                     </div>
 
@@ -309,7 +309,7 @@
         <!-- SECTION 3: Signature Flavor Lineup -->
         <section class="py-24 bg-gray-50 dark:bg-[#151515] section-padding">
             <div class="max-w-7xl mx-auto">
-                <div class="flex flex-col md:flex-row justify-between items-center mb-12" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-up">
                     <div class="w-full md:w-auto mb-6 md:mb-0">
                         <h2 class="text-4xl md:text-5xl mb-4">Meet the Lineup</h2>
                         <p class="text-gray-600 dark:text-gray-400 max-w-xl">Our core collection. Fermented to
@@ -325,7 +325,7 @@
                         <div
                             class="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-800 p-6 flex justify-center items-center">
                             <span
-                                class="absolute top-4 right-4 bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
                             <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600&q=80"
                                 alt="Smoked Ember Sauce"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 absolute inset-0 brightness-50 dark:brightness-[0.6]">
@@ -337,7 +337,7 @@
                             <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm flex-grow">Smoky Chipotle • Roasted
                                 Garlic</p>
                             <div class="flex items-center justify-between mb-6">
-                                <div class="flex gap-1 text-orange-400 text-sm">
+                                <div class="flex gap-1 text-brandRed text-sm">
                                     <i class="fa-solid fa-fire"></i><i class="fa-solid fa-fire"></i><i
                                         class="fa-solid fa-fire text-gray-300 dark:text-gray-600"></i>
                                 </div>
@@ -352,7 +352,7 @@
                         <div
                             class="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-800 p-6 flex justify-center items-center">
                             <span
-                                class="absolute top-4 right-4 bg-brandRed/10 text-brandRed text-xs font-bold px-3 py-1 rounded-full z-10">Hot</span>
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Hot</span>
                             <img src="https://images.pexels.com/photos/16724962/pexels-photo-16724962.jpeg"
                                 alt="Mango Blaze Sauce"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 absolute inset-0 brightness-50 dark:brightness-[0.6]">
@@ -363,7 +363,7 @@
                             <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm flex-grow">Sweet Mango • Sharp
                                 Habanero</p>
                             <div class="flex items-center justify-between mb-6">
-                                <div class="flex gap-1 text-brandOrange text-sm">
+                                <div class="flex gap-1 text-brandRed text-sm">
                                     <i class="fa-solid fa-fire"></i><i class="fa-solid fa-fire"></i><i
                                         class="fa-solid fa-fire"></i><i
                                         class="fa-solid fa-fire text-gray-300 dark:text-gray-600"></i>
@@ -379,7 +379,7 @@
                         <div
                             class="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-800 p-6 flex justify-center items-center">
                             <span
-                                class="absolute top-4 right-4 bg-red-900 text-white text-xs font-bold px-3 py-1 rounded-full z-10">Extreme</span>
+                                class="absolute top-4 right-4 bg-brandRed/30 text-white text-xs font-bold px-3 py-1 rounded-full z-10">Extreme</span>
                             <img src="https://images.pexels.com/photos/13716992/pexels-photo-13716992.jpeg"
                                 alt="Inferno Drop Sauce"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 absolute inset-0 brightness-50 dark:brightness-[0.6]">
@@ -406,7 +406,7 @@
                         <div
                             class="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-800 p-6 flex justify-center items-center">
                             <span
-                                class="absolute top-4 right-4 bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full z-10">Mild</span>
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Mild</span>
                             <img src="https://images.pexels.com/photos/9661245/pexels-photo-9661245.jpeg"
                                 alt="Green Voltage Sauce"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 absolute inset-0 brightness-50 dark:brightness-[0.6]">
@@ -417,7 +417,7 @@
                             <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm flex-grow">Jalapeño • Fresh Lime •
                                 Cilantro</p>
                             <div class="flex items-center justify-between mb-6">
-                                <div class="flex gap-1 text-yellow-400 text-sm">
+                                <div class="flex gap-1 text-brandRed text-sm">
                                     <i class="fa-solid fa-fire"></i><i
                                         class="fa-solid fa-fire text-gray-300 dark:text-gray-600"></i>
                                 </div>
@@ -428,12 +428,12 @@
                     </div>
 
                     <!-- Card 5 -->
-                    <div class="sauce-card group flex flex-col h-full sm:col-span-2 lg:col-span-1 lg:col-start-auto sm:col-start-1"
+                    <div class="sauce-card group flex flex-col h-full"
                         data-aos="fade-up" data-aos-delay="500">
                         <div
                             class="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-800 p-6 flex justify-center items-center">
                             <span
-                                class="absolute top-4 right-4 bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
                             <img src="https://images.pexels.com/photos/8455314/pexels-photo-8455314.jpeg"
                                 alt="Fire Honey Sauce"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 absolute inset-0 brightness-50 dark:brightness-[0.6]">
@@ -444,7 +444,7 @@
                             <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm flex-grow">Wildflower Honey •
                                 Crushed Chilies</p>
                             <div class="flex items-center justify-between mb-6">
-                                <div class="flex gap-1 text-orange-400 text-sm">
+                                <div class="flex gap-1 text-brandRed text-sm">
                                     <i class="fa-solid fa-fire"></i><i class="fa-solid fa-fire"></i>
                                 </div>
                                 <span class="text-sm font-semibold text-gray-500">Chili Flakes</span>
@@ -453,8 +453,30 @@
                         </div>
                     </div>
 
-                    <!-- Empty div for alignment on tablet/desktop if needed, but flex wrap handles it. The request said "3 cards in one row on desktop, 2 in first row on tablet. Third centered." We have 5 cards here. 
-                    Grid col sm:grid-cols-2 lg:grid-cols-3 handles this automatically. Card 5 on SM is col-span-2, so it stretches. Let's make it look like a feature or center it. -->
+                    <!-- Card 6 -->
+                    <div class="sauce-card group flex flex-col h-full" data-aos="fade-up" data-aos-delay="600">
+                        <div
+                            class="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-800 p-6 flex justify-center items-center">
+                            <span
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
+                            <img src="https://images.pexels.com/photos/884596/pexels-photo-884596.jpeg"
+                                alt="Garlic Fury Sauce"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 absolute inset-0 brightness-50 dark:brightness-[0.6]">
+                            <h3 class="relative z-10 text-4xl font-black text-white drop-shadow-md">Garlic Fury</h3>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="text-2xl font-bold mb-2">Garlic Fury</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm flex-grow">Roasted Garlic •
+                                Red Chili</p>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex gap-1 text-brandRed text-sm">
+                                    <i class="fa-solid fa-fire"></i><i class="fa-solid fa-fire"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-500">Garlic</span>
+                            </div>
+                            <a href="#" class="btn-outline w-full text-center">View Flavor</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="mt-8 text-center md:hidden">
@@ -476,7 +498,7 @@
                     </div>
 
                     <div class="p-10 lg:p-16 text-white" data-aos="fade-left">
-                        <span class="text-brandOrange font-bold tracking-widest text-sm uppercase mb-4 block">The
+                        <span class="text-brandRed font-bold tracking-widest text-sm uppercase mb-4 block">The
                             Process</span>
                         <h2 class="text-4xl md:text-5xl font-display mb-6 text-white">Flavor Comes Before Fire.</h2>
                         <p class="text-gray-300 mb-8 text-lg leading-relaxed">
@@ -487,15 +509,15 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-gray-700">
                             <div>
-                                <h3 class="text-3xl font-display font-bold text-brandOrange mb-1">100%</h3>
+                                <h3 class="text-3xl font-display font-bold text-brandRed mb-1">100%</h3>
                                 <p class="text-sm text-gray-400 font-medium">Real Peppers</p>
                             </div>
                             <div>
-                                <h3 class="text-3xl font-display font-bold text-brandOrange mb-1">30+</h3>
+                                <h3 class="text-3xl font-display font-bold text-brandRed mb-1">30+</h3>
                                 <p class="text-sm text-gray-400 font-medium">Flavor Experiments</p>
                             </div>
                             <div>
-                                <h3 class="text-3xl font-display font-bold text-brandOrange mb-1">14 Days</h3>
+                                <h3 class="text-3xl font-display font-bold text-brandRed mb-1">14 Days</h3>
                                 <p class="text-sm text-gray-400 font-medium">Fermentation</p>
                             </div>
                         </div>
@@ -538,7 +560,7 @@
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6">
                             <span
-                                class="bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded w-max mb-2">Medium</span>
+                                class="bg-brandRed text-white text-xs font-bold px-2 py-1 rounded w-max mb-2">Medium</span>
                             <h3 class="text-2xl font-bold text-white mb-1">Spicy Smash Burger</h3>
                             <p class="text-gray-300 text-sm">Paired with Smoked Ember</p>
                         </div>
@@ -570,7 +592,7 @@
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6">
                             <span
-                                class="bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded w-max mb-2">Medium</span>
+                                class="bg-brandRed text-black text-xs font-bold px-2 py-1 rounded w-max mb-2">Medium</span>
                             <h3 class="text-2xl font-bold text-white mb-1">Hot Honey Pizza</h3>
                             <p class="text-gray-300 text-sm">Paired with Fire Honey</p>
                         </div>
@@ -585,7 +607,7 @@
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6">
                             <span
-                                class="bg-red-900 text-white text-xs font-bold px-2 py-1 rounded w-max mb-2">Extreme</span>
+                                class="bg-brandRed/30 text-white text-xs font-bold px-2 py-1 rounded w-max mb-2">Extreme</span>
                             <h3 class="text-2xl font-bold text-white mb-1">Devil's Elote</h3>
                             <p class="text-gray-300 text-sm">Paired with Inferno Drop</p>
                         </div>
@@ -618,11 +640,11 @@
                         Enquiry</a>
                 </div>
 
-                <form class="max-w-md mx-auto relative group">
+                <form class="max-w-md mx-auto flex flex-col sm:block relative group gap-3">
                     <input type="email" placeholder="Enter your email address" required
-                        class="w-full bg-white/10 border border-white/20 rounded-full py-4 pl-6 pr-32 text-white placeholder-gray-400 focus:outline-none focus:border-brandRed transition-colors backdrop-blur-md">
+                        class="w-full bg-white/10 border border-white/20 rounded-full py-4 px-6 sm:pr-36 text-white placeholder-gray-400 focus:outline-none focus:border-brandRed transition-colors backdrop-blur-md">
                     <button type="submit"
-                        class="absolute right-2 top-2 bottom-2 bg-brandRed hover:bg-brandRedDark text-white font-bold rounded-full px-6 transition-colors">
+                        class="w-full sm:w-auto sm:absolute sm:right-2 sm:top-2 sm:bottom-2 py-4 sm:py-0 bg-brandRed hover:bg-brandRedDark text-white font-bold rounded-full px-6 transition-colors">
                         Subscribe
                     </button>
                 </form>
@@ -640,7 +662,7 @@
                     <a href="index.html" class="flex items-center gap-2 mb-6">
                         <i class="fa-solid fa-fire-flame-curved text-brandRed text-3xl"></i>
                         <span
-                            class="font-display font-black text-3xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
+                            class="font-display font-black text-2xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
                     </a>
                     <p class="text-gray-600 dark:text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
                         Small batch, artisan hot sauces built for flavor before fire. Crafted with natural ingredients
@@ -684,9 +706,9 @@
                     <ul class="space-y-4">
                         <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Mild & Mellow</a>
                         </li>
-                        <li><a href="#" class="text-gray-400 hover:text-brandOrange transition-colors">Medium Kick</a>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Medium Kick</a>
                         </li>
-                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Hot & Heavy</a>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Hot & Heavy</a>
                         </li>
                         <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors">Extreme Fire</a></li>
                     </ul>

@@ -34,7 +34,7 @@
                 </div>
 
                 <!-- Desktop Nav -->
-                <nav class="hidden lg:flex space-x-8 items-center" aria-label="Main Navigation">
+                <nav class="hidden lg:flex gap-8 items-center" aria-label="Main Navigation">
                     <a href="index.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home</a>
                     <a href="home-2.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home 2</a>
                     <a href="about.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">About</a>
@@ -45,15 +45,15 @@
                 </nav>
 
                 <!-- Right Actions -->
-                <div class="hidden lg:flex items-center space-x-6">
+                <div class="hidden lg:flex items-center gap-6">
 
                     <button id="rtlToggle"
-                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors font-bold text-lg"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
                         aria-label="Toggle RTL">
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                     </button>
                     <button id="themeToggle"
-                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
                         aria-label="Toggle Dark Mode">
                         <i class="fa-solid fa-moon"></i>
                     </button>
@@ -64,7 +64,7 @@
 
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden flex items-center gap-4">
-                    <button id="themeToggleMobile" class="text-gray-600 dark:text-gray-300">
+                    <button id="themeToggleMobile" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors">
                         <i class="fa-solid fa-moon"></i>
                     </button>
                     <button id="mobileMenuBtn"
@@ -93,7 +93,8 @@
                     class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Recipes</a>
                 <a href="wholesale.html"
                     class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Wholesale</a>
-                <a href="contact.html" class="block px-3 py-3 rounded-md text-base font-semibold text-brandRed bg-brandRed/10">Contact</a>
+                <a href="contact.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Contact</a>
                 <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
                     <a href="products.html" class="btn-primary w-full text-center">Shop Flavors</a>
                 </div>
@@ -106,7 +107,7 @@
         <section class="relative py-16 md:py-20 overflow-hidden bg-brandCream dark:bg-[#121212] section-padding border-b border-gray-100 dark:border-gray-800">
             <div class="max-w-7xl mx-auto relative z-10 text-center" data-aos="fade-up">
                 <span class="inline-block py-1 px-3 rounded-full bg-brandRed/10 text-brandRed font-semibold text-sm tracking-wider mb-6">CONTACT US</span>
-                <h1 class="text-5xl md:text-7xl font-display font-black mb-6">Let's <span class="text-brandOrange">Talk Heat.</span></h1>
+                <h1 class="text-5xl md:text-7xl font-display font-black mb-6">Let's <span class="text-brandRed">Talk Heat.</span></h1>
                 <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
                     Have a question about an order? Want to collaborate? Or just want to share your favorite Fyrza recipe? We're all ears.
                 </p>
@@ -167,7 +168,7 @@
                                 <span class="error-msg text-red-500 text-xs mt-1 hidden">Please enter your message</span>
                             </div>
 
-                            <button type="submit" class="btn-primary w-full sm:w-auto px-10">Send Message</button>
+                            <button type="submit" class="btn-primary w-full px-10">Send Message</button>
                         </form>
                     </div>
 
@@ -178,7 +179,7 @@
                             
                             <div class="space-y-6">
                                 <div class="flex items-start gap-4">
-                                    <div class="w-10 h-10 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-brandRed flex-shrink-0">
+                                    <div class="w-10 h-10 rounded-full bg-brandRed/10 dark:bg-brandRed/30/30 flex items-center justify-center text-brandRed flex-shrink-0">
                                         <i class="fa-solid fa-location-dot"></i>
                                     </div>
                                     <div>
@@ -188,7 +189,7 @@
                                 </div>
 
                                 <div class="flex items-start gap-4">
-                                    <div class="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-brandOrange flex-shrink-0">
+                                    <div class="w-10 h-10 rounded-full bg-brandRed/10 dark:bg-orange-900/30 flex items-center justify-center text-brandRed flex-shrink-0">
                                         <i class="fa-solid fa-clock"></i>
                                     </div>
                                     <div>
@@ -282,22 +283,31 @@
 
     <!-- Global Footer (Same as index.html) -->
     <!-- Content omitted for brevity -->
-    <footer class="bg-white dark:bg-brandCharcoal text-brandCharcoal dark:text-white pt-20 pb-10 section-padding border-t border-gray-200 dark:border-gray-800">
+    <footer
+        class="bg-white dark:bg-brandCharcoal text-brandCharcoal dark:text-white pt-20 pb-10 section-padding border-t border-gray-200 dark:border-gray-800">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <!-- Brand -->
                 <div class="lg:col-span-1">
                     <a href="index.html" class="flex items-center gap-2 mb-6">
                         <i class="fa-solid fa-fire-flame-curved text-brandRed text-3xl"></i>
-                        <span class="font-display font-black text-3xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
+                        <span
+                            class="font-display font-black text-2xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
                     </a>
                     <p class="text-gray-600 dark:text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
-                        Small batch, artisan hot sauces built for flavor before fire. Crafted with natural ingredients for those who take their heat seriously.
+                        Small batch, artisan hot sauces built for flavor before fire. Crafted with natural ingredients
+                        for those who take their heat seriously.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors"
+                            aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-brandRed transition-colors"
+                            aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
 
@@ -305,10 +315,18 @@
                 <div>
                     <h4 class="font-display font-bold text-lg mb-6">Explore</h4>
                     <ul class="space-y-4">
-                        <li><a href="products.html" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">All Sauces</a></li>
-                        <li><a href="recipes.html" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Recipes & Pairings</a></li>
-                        <li><a href="about.html" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Our Story</a></li>
-                        <li><a href="wholesale.html" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Wholesale</a></li>
+                        <li><a href="products.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">All
+                                Sauces</a></li>
+                        <li><a href="recipes.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Recipes
+                                & Pairings</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Our
+                                Story</a></li>
+                        <li><a href="wholesale.html"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors">Wholesale</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -316,9 +334,12 @@
                 <div>
                     <h4 class="font-display font-bold text-lg mb-6">Heat Levels</h4>
                     <ul class="space-y-4">
-                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Mild & Mellow</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-brandOrange transition-colors">Medium Kick</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Hot & Heavy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Mild & Mellow</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Medium Kick</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Hot & Heavy</a>
+                        </li>
                         <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors">Extreme Fire</a></li>
                     </ul>
                 </div>
@@ -329,25 +350,30 @@
                     <ul class="space-y-4">
                         <li class="flex items-start gap-3">
                             <i class="fa-solid fa-location-dot mt-1 text-brandRed"></i>
-                            <span class="text-gray-600 dark:text-gray-400 text-sm">123 Pepper Lane,<br>Austin, TX 78701</span>
+                            <span class="text-gray-600 dark:text-gray-400 text-sm">123 Pepper Lane,<br>Austin, TX
+                                78701</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <i class="fa-solid fa-envelope text-brandRed"></i>
-                            <a href="mailto:hello@fyrza.com" class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors text-sm">hello@fyrza.com</a>
+                            <a href="mailto:hello@fyrza.com"
+                                class="text-gray-600 dark:text-gray-400 hover:text-brandRed dark:hover:text-white transition-colors text-sm">hello@fyrza.com</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="border-t border-gray-200 dark:border-gray-200 dark:border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div
+                class="border-t border-gray-200 dark:border-gray-200 dark:border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-gray-500 text-sm">&copy; 2026 Fyrza Hot Sauce. All rights reserved.</p>
                 <div class="flex gap-6 text-sm text-gray-500 items-center">
                     <a href="#" class="hover:text-brandRed dark:hover:text-white transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-brandRed dark:hover:text-white transition-colors">Terms of Service</a>
-                                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="ml-2 w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 flex items-center justify-center hover:bg-brandRed dark:hover:bg-brandRed hover:text-white dark:hover:text-white transition-colors shadow-sm" aria-label="Back to Top">
-                    <i class="fa-solid fa-arrow-up"></i>
-                </button>
-            </div>
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                        class="ml-2 w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 flex items-center justify-center hover:bg-brandRed dark:hover:bg-brandRed hover:text-white dark:hover:text-white transition-colors shadow-sm"
+                        aria-label="Back to Top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </footer>

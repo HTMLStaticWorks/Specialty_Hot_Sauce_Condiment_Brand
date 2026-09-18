@@ -64,7 +64,7 @@
                 </div>
 
                 <!-- Desktop Nav -->
-                <nav class="hidden lg:flex space-x-8 items-center" aria-label="Main Navigation">
+                <nav class="hidden lg:flex gap-8 items-center" aria-label="Main Navigation">
                     <a href="index.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home</a>
                     <a href="home-2.html" class="nav-link text-gray-900 dark:text-gray-100 py-2 active">Home 2</a>
                     <a href="about.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">About</a>
@@ -75,15 +75,15 @@
                 </nav>
 
                 <!-- Right Actions -->
-                <div class="hidden lg:flex items-center space-x-6">
+                <div class="hidden lg:flex items-center gap-6">
 
                     <button id="rtlToggle"
-                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors font-bold text-lg"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
                         aria-label="Toggle RTL">
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                     </button>
                     <button id="themeToggle"
-                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
                         aria-label="Toggle Dark Mode">
                         <i class="fa-solid fa-moon"></i>
                     </button>
@@ -94,7 +94,7 @@
 
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden flex items-center gap-4">
-                    <button id="themeToggleMobile" class="text-gray-600 dark:text-gray-300">
+                    <button id="themeToggleMobile" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors">
                         <i class="fa-solid fa-moon"></i>
                     </button>
                     <button id="mobileMenuBtn"
@@ -112,7 +112,8 @@
             <div class="px-4 pt-2 pb-6 space-y-2">
                 <a href="index.html"
                     class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Home</a>
-                <a href="home-2.html" class="block px-3 py-3 rounded-md text-base font-semibold text-brandRed bg-brandRed/10">Home
+                <a href="home-2.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Home
                     2</a>
                 <a href="about.html"
                     class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">About</a>
@@ -133,18 +134,18 @@
 
     <main>
         <!-- HERO SECTION -->
-        <section class="relative pt-32 pb-12 overflow-hidden section-padding bg-brandCream dark:bg-[#121212]">
+        <section class="relative pt-32 pb-32 overflow-hidden section-padding bg-brandCream dark:bg-[#121212]">
             <!-- Background Image -->
             <div class="absolute inset-0 z-0 pointer-events-none">
                 <img src="https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?w=1600&q=80"
                     alt="Hero Background"
-                    class="w-full h-full object-cover opacity-10 dark:opacity-20 mix-blend-multiply dark:mix-blend-screen">
+                    class="w-full h-full object-cover opacity-40 dark:opacity-20 mix-blend-multiply dark:mix-blend-screen">
             </div>
 
             <div class="max-w-7xl mx-auto relative z-10 text-center mb-16" data-aos="fade-up">
                 <h1 class="text-5xl md:text-7xl font-display mb-6">Born From Peppers.<br>Built For <span
                         class="text-brandRed">Flavor.</span></h1>
-                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10">We don't just bring the
+                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10">We don't just bring the
                     heat. We bring the flavor profile that transforms your meals.</p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a href="products.html" class="btn-primary text-lg px-8">Shop All</a>
@@ -210,7 +211,7 @@
                                 class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform">
                                 Medium</h3>
                             <p
-                                class="text-yellow-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                                class="text-brandRed font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
                                 The Perfect Balance.</p>
                         </div>
                     </a>
@@ -227,7 +228,7 @@
                                 class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform">
                                 Hot</h3>
                             <p
-                                class="text-orange-500 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                                class="text-brandRed font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
                                 A Serious Kick.</p>
                         </div>
                     </a>
@@ -243,7 +244,7 @@
                             <h3
                                 class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform">
                                 Extra Hot</h3>
-                            <p class="text-red-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                            <p class="text-brandRed font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
                                 For True Heat Seekers.</p>
                         </div>
                     </a>
@@ -256,8 +257,8 @@
             <div class="max-w-7xl mx-auto text-center">
                 <h2 class="text-4xl font-display mb-16" data-aos="zoom-in">Find Your Flavor Profile</h2>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow"
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-8">
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow lg:col-span-2"
                         data-aos="fade-up" data-aos-delay="100">
                         <div
                             class="w-16 h-16 mx-auto bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-6">
@@ -268,55 +269,55 @@
                         <span class="text-xs font-bold text-brandRed">Rec: Smoked Ember</span>
                     </div>
 
-                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow lg:col-span-2"
                         data-aos="fade-up" data-aos-delay="200">
                         <div
                             class="w-16 h-16 mx-auto bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-candy-cane text-2xl text-pink-500"></i>
+                            <i class="fa-solid fa-candy-cane text-2xl text-brandRed"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Sweet</h3>
                         <p class="text-gray-500 text-sm mb-4">Honey and brown sugar balanced with sharp heat.</p>
                         <span class="text-xs font-bold text-brandRed">Rec: Fire Honey</span>
                     </div>
 
-                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow lg:col-span-2"
                         data-aos="fade-up" data-aos-delay="300">
                         <div
                             class="w-16 h-16 mx-auto bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-lemon text-2xl text-yellow-500"></i>
+                            <i class="fa-solid fa-lemon text-2xl text-brandRed"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Tangy</h3>
                         <p class="text-gray-500 text-sm mb-4">Bright citrus and vinegar notes for sharp cut-through.</p>
                         <span class="text-xs font-bold text-brandRed">Rec: Green Voltage</span>
                     </div>
 
-                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow lg:col-span-2"
                         data-aos="fade-up" data-aos-delay="400">
                         <div
                             class="w-16 h-16 mx-auto bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-bowl-food text-2xl text-amber-700 dark:text-amber-500"></i>
+                            <i class="fa-solid fa-bowl-food text-2xl text-brandRed dark:text-brandRed"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Savory</h3>
                         <p class="text-gray-500 text-sm mb-4">Umami-rich garlic, onion, and secret spice blends.</p>
                         <span class="text-xs font-bold text-brandRed">Rec: Garlic Fury</span>
                     </div>
 
-                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow lg:col-span-2 lg:col-start-3"
                         data-aos="fade-up" data-aos-delay="500">
                         <div
                             class="w-16 h-16 mx-auto bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-apple-whole text-2xl text-orange-400"></i>
+                            <i class="fa-solid fa-apple-whole text-2xl text-brandRed"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Fruity</h3>
                         <p class="text-gray-500 text-sm mb-4">Tropical mango and pineapple fused with habanero.</p>
                         <span class="text-xs font-bold text-brandRed">Rec: Mango Blaze</span>
                     </div>
 
-                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow lg:col-span-2"
                         data-aos="fade-up" data-aos-delay="600">
                         <div
                             class="w-16 h-16 mx-auto bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-flask text-2xl text-purple-500"></i>
+                            <i class="fa-solid fa-flask text-2xl text-brandRed"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Fermented</h3>
                         <p class="text-gray-500 text-sm mb-4">Aged pepper mash for complex, funky depth.</p>
@@ -348,7 +349,7 @@
                             <h3 class="text-2xl font-bold mb-4">1. The Harvest</h3>
                             <p class="text-gray-600 dark:text-gray-400 mb-6">We source our peppers directly from small
                                 family farms ensuring peak ripeness and boldest natural flavor.</p>
-                            <img src="https://loremflickr.com/600/400/farming?lock=901" alt="Fresh pepper harvest"
+                            <img src="https://images.pexels.com/photos/15750739/pexels-photo-15750739.jpeg" alt="Fresh pepper harvest"
                                 class="rounded-xl shadow-lg w-full md:ml-auto object-cover h-48">
                         </div>
                         <div
@@ -362,13 +363,13 @@
                         class="flex flex-col md:flex-row justify-between items-start md:items-center w-full mb-16 relative">
                         <div class="hidden md:block w-full md:w-5/12"></div>
                         <div
-                            class="hidden md:flex absolute left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-8 h-8 rounded-full bg-brandOrange border-4 border-white dark:border-gray-900 z-10">
+                            class="hidden md:flex absolute left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-8 h-8 rounded-full bg-brandRed border-4 border-white dark:border-gray-900 z-10">
                         </div>
                         <div class="w-full md:w-5/12 text-left md:pl-12" data-aos="fade-left">
                             <h3 class="text-2xl font-bold mb-4">2. Slow Fermentation</h3>
                             <p class="text-gray-600 dark:text-gray-400 mb-6">The pepper mash is aged in barrels for up
                                 to 30 days, allowing complex flavors to develop naturally.</p>
-                            <img src="https://loremflickr.com/600/400/barrels?lock=902" alt="Fermentation barrels"
+                            <img src="https://images.pexels.com/photos/1769272/pexels-photo-1769272.jpeg" alt="Fermentation barrels"
                                 class="rounded-xl shadow-lg w-full object-cover h-48">
                         </div>
                     </div>
@@ -380,7 +381,7 @@
                             <h3 class="text-2xl font-bold mb-4">3. The Blend</h3>
                             <p class="text-gray-600 dark:text-gray-400 mb-6">We blend the aged mash with fresh herbs,
                                 vinegars, and spices to create our signature flavor profiles.</p>
-                            <img src="https://loremflickr.com/600/400/spices?lock=903" alt="Blending spices"
+                            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&q=80" alt="Blending spices"
                                 class="rounded-xl shadow-lg w-full md:ml-auto object-cover h-48">
                         </div>
                         <div
@@ -393,13 +394,13 @@
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center w-full relative">
                         <div class="hidden md:block w-full md:w-5/12"></div>
                         <div
-                            class="hidden md:flex absolute left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-8 h-8 rounded-full bg-brandOrange border-4 border-white dark:border-gray-900 z-10">
+                            class="hidden md:flex absolute left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-8 h-8 rounded-full bg-brandRed border-4 border-white dark:border-gray-900 z-10">
                         </div>
                         <div class="w-full md:w-5/12 text-left md:pl-12" data-aos="fade-left">
                             <h3 class="text-2xl font-bold mb-4">4. Hand Bottled</h3>
                             <p class="text-gray-600 dark:text-gray-400 mb-6">Every batch is tested, bottled, and labeled
                                 with care, ready to elevate your next meal.</p>
-                            <img src="https://loremflickr.com/600/400/bottling?lock=904" alt="Bottling process"
+                            <img src="https://images.unsplash.com/photo-1622485542475-472091409f6e?w=600&q=80" alt="Bottling process"
                                 class="rounded-xl shadow-lg w-full object-cover h-48">
                         </div>
                     </div>
@@ -420,7 +421,7 @@
                     <!-- Testimonial 1 -->
                     <div class="bg-white dark:bg-black/20 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-white/10"
                         data-aos="fade-up" data-aos-delay="100">
-                        <div class="flex text-yellow-400 text-sm mb-4">
+                        <div class="flex text-brandRed text-sm mb-4">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                 class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                 class="fa-solid fa-star"></i>
@@ -440,7 +441,7 @@
                     <!-- Testimonial 2 -->
                     <div class="bg-white dark:bg-black/20 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-white/10"
                         data-aos="fade-up" data-aos-delay="200">
-                        <div class="flex text-yellow-400 text-sm mb-4">
+                        <div class="flex text-brandRed text-sm mb-4">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                 class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                 class="fa-solid fa-star"></i>
@@ -460,7 +461,7 @@
                     <!-- Testimonial 3 -->
                     <div class="bg-white dark:bg-black/20 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-white/10 sm:col-span-2 sm:max-w-md sm:mx-auto lg:col-span-1 lg:max-w-none w-full"
                         data-aos="fade-up" data-aos-delay="300">
-                        <div class="flex text-yellow-400 text-sm mb-4">
+                        <div class="flex text-brandRed text-sm mb-4">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                 class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                 class="fa-solid fa-star"></i>
@@ -511,7 +512,7 @@
                     <a href="index.html" class="flex items-center gap-2 mb-6">
                         <i class="fa-solid fa-fire-flame-curved text-brandRed text-3xl"></i>
                         <span
-                            class="font-display font-black text-3xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
+                            class="font-display font-black text-2xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
                     </a>
                     <p class="text-gray-600 dark:text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
                         Small batch, artisan hot sauces built for flavor before fire. Crafted with natural ingredients
@@ -555,9 +556,9 @@
                     <ul class="space-y-4">
                         <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Mild & Mellow</a>
                         </li>
-                        <li><a href="#" class="text-gray-400 hover:text-brandOrange transition-colors">Medium Kick</a>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Medium Kick</a>
                         </li>
-                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Hot & Heavy</a>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Hot & Heavy</a>
                         </li>
                         <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors">Extreme Fire</a></li>
                     </ul>

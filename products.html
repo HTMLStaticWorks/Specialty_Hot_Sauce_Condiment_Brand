@@ -37,7 +37,7 @@
                 </div>
 
                 <!-- Desktop Nav -->
-                <nav class="hidden lg:flex space-x-8 items-center" aria-label="Main Navigation">
+                <nav class="hidden lg:flex gap-8 items-center" aria-label="Main Navigation">
                     <a href="index.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home</a>
                     <a href="home-2.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home 2</a>
                     <a href="about.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">About</a>
@@ -48,15 +48,15 @@
                 </nav>
 
                 <!-- Right Actions -->
-                <div class="hidden lg:flex items-center space-x-6">
+                <div class="hidden lg:flex items-center gap-6">
 
                     <button id="rtlToggle"
-                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors font-bold text-lg"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
                         aria-label="Toggle RTL">
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                     </button>
                     <button id="themeToggle"
-                        class="text-gray-600 dark:text-gray-300 hover:text-brandRed transition-colors"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
                         aria-label="Toggle Dark Mode">
                         <i class="fa-solid fa-moon"></i>
                     </button>
@@ -67,7 +67,8 @@
 
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden flex items-center gap-4">
-                    <button id="themeToggleMobile" class="text-gray-600 dark:text-gray-300">
+                    <button id="themeToggleMobile"
+                        class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors">
                         <i class="fa-solid fa-moon"></i>
                     </button>
                     <button id="mobileMenuBtn"
@@ -90,7 +91,8 @@
                     2</a>
                 <a href="about.html"
                     class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">About</a>
-                <a href="products.html" class="block px-3 py-3 rounded-md text-base font-semibold text-brandRed bg-brandRed/10">Products</a>
+                <a href="products.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Products</a>
                 <a href="recipes.html"
                     class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Recipes</a>
                 <a href="wholesale.html"
@@ -112,7 +114,7 @@
                 <img src="https://images.pexels.com/photos/37271679/pexels-photo-37271679.jpeg"
                     alt="Products Background" class="w-full h-full object-cover" data-aos="fade-in"
                     data-aos-duration="1500">
-                <div class="absolute inset-0 bg-brandCream/50 dark:bg-[#121212]/70 backdrop-blur-[2px]"></div>
+                <div class="absolute inset-0 bg-brandCream/60 dark:bg-[#121212]/70 backdrop-blur-[2px]"></div>
             </div>
 
             <div class="max-w-7xl mx-auto relative z-10 text-center" data-aos="fade-up">
@@ -120,7 +122,7 @@
                     class="inline-block py-1 px-3 rounded-full bg-brandRed/10 text-brandRed font-semibold text-sm tracking-wider mb-6">SHOP
                     ALL</span>
                 <h1 class="text-5xl md:text-7xl font-display font-black mb-6">Find Your <span
-                        class="text-brandOrange">Perfect Heat.</span></h1>
+                        class="text-brandRed">Perfect Heat.</span></h1>
                 <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
                     From our mild, fruit-forward blends to our extreme reaper mash, every bottle of Fyrza is guaranteed
                     to elevate your next meal. Explore our full collection below and prepare to turn up the flavor.
@@ -139,14 +141,15 @@
                         <div
                             class="relative h-64 bg-gray-100 dark:bg-gray-900 flex justify-center items-center overflow-hidden">
                             <span
-                                class="absolute top-4 right-4 bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
-                            <img src="https://loremflickr.com/600/800/bottle,sauce?lock=101" alt="Smoked Ember"
-                                class="h-[80%] object-contain drop-shadow-xl z-10 transition-transform duration-500 hover:-translate-y-2">
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
+                            <img src="https://images.pexels.com/photos/5950444/pexels-photo-5950444.jpeg"
+                                alt="Smoked Ember"
+                                class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Smoked Ember</h3>
                             <p class="text-gray-500 text-sm mb-4">Smoky Chipotle • Medium</p>
-                            <div class="flex gap-1 text-orange-400 text-sm mb-4"><i class="fa-solid fa-fire"></i><i
+                            <div class="flex gap-1 text-brandRed text-sm mb-4"><i class="fa-solid fa-fire"></i><i
                                     class="fa-solid fa-fire"></i></div>
                             <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Rich, deep smoke from
                                 mesquite-roasted chipotles.</p>
@@ -160,14 +163,15 @@
                         <div
                             class="relative h-64 bg-gray-100 dark:bg-gray-900 flex justify-center items-center overflow-hidden">
                             <span
-                                class="absolute top-4 right-4 bg-red-100 text-brandRed text-xs font-bold px-3 py-1 rounded-full z-10">Hot</span>
-                            <img src="https://loremflickr.com/600/800/bottle,sauce?lock=102" alt="Mango Blaze"
-                                class="h-[80%] object-contain drop-shadow-xl z-10 transition-transform duration-500 hover:-translate-y-2">
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Hot</span>
+                            <img src="https://images.pexels.com/photos/15750739/pexels-photo-15750739.jpeg"
+                                alt="Mango Blaze"
+                                class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Mango Blaze</h3>
                             <p class="text-gray-500 text-sm mb-4">Sweet Mango • Habanero</p>
-                            <div class="flex gap-1 text-brandOrange text-sm mb-4"><i class="fa-solid fa-fire"></i><i
+                            <div class="flex gap-1 text-brandRed text-sm mb-4"><i class="fa-solid fa-fire"></i><i
                                     class="fa-solid fa-fire"></i><i class="fa-solid fa-fire"></i></div>
                             <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Tropical sweetness
                                 followed by a sharp, unapologetic habanero bite.</p>
@@ -181,9 +185,10 @@
                         <div
                             class="relative h-64 bg-gray-100 dark:bg-gray-900 flex justify-center items-center overflow-hidden">
                             <span
-                                class="absolute top-4 right-4 bg-red-900 text-white text-xs font-bold px-3 py-1 rounded-full z-10">Extreme</span>
-                            <img src="https://loremflickr.com/600/800/bottle,sauce?lock=103" alt="Inferno Drop"
-                                class="h-[80%] object-contain drop-shadow-xl z-10 transition-transform duration-500 hover:-translate-y-2">
+                                class="absolute top-4 right-4 bg-brandRed/30 text-white text-xs font-bold px-3 py-1 rounded-full z-10">Extreme</span>
+                            <img src="https://images.pexels.com/photos/27116329/pexels-photo-27116329.jpeg"
+                                alt="Inferno Drop"
+                                class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Inferno Drop</h3>
@@ -203,15 +208,15 @@
                         <div
                             class="relative h-64 bg-gray-100 dark:bg-gray-900 flex justify-center items-center overflow-hidden">
                             <span
-                                class="absolute top-4 right-4 bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full z-10">Mild</span>
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Mild</span>
                             <img src="https://images.pexels.com/photos/13689190/pexels-photo-13689190.jpeg"
                                 alt="Green Voltage"
-                                class="h-[80%] object-contain drop-shadow-xl z-10 transition-transform duration-500 hover:-translate-y-2">
+                                class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Green Voltage</h3>
                             <p class="text-gray-500 text-sm mb-4">Jalapeño • Fresh Lime</p>
-                            <div class="flex gap-1 text-yellow-400 text-sm mb-4"><i class="fa-solid fa-fire"></i></div>
+                            <div class="flex gap-1 text-brandRed text-sm mb-4"><i class="fa-solid fa-fire"></i></div>
                             <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Zesty, bright, and
                                 perfect for tacos and eggs.</p>
                             <a href="#" class="btn-primary w-full text-sm py-2">View Flavor</a>
@@ -224,14 +229,15 @@
                         <div
                             class="relative h-64 bg-gray-100 dark:bg-gray-900 flex justify-center items-center overflow-hidden">
                             <span
-                                class="absolute top-4 right-4 bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
-                            <img src="https://loremflickr.com/600/800/bottle,sauce?lock=105" alt="Garlic Fury"
-                                class="h-[80%] object-contain drop-shadow-xl z-10 transition-transform duration-500 hover:-translate-y-2">
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
+                            <img src="https://images.pexels.com/photos/13696031/pexels-photo-13696031.jpeg"
+                                alt="Garlic Fury"
+                                class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Garlic Fury</h3>
                             <p class="text-gray-500 text-sm mb-4">Roasted Garlic • Red Chili</p>
-                            <div class="flex gap-1 text-orange-400 text-sm mb-4"><i class="fa-solid fa-fire"></i><i
+                            <div class="flex gap-1 text-brandRed text-sm mb-4"><i class="fa-solid fa-fire"></i><i
                                     class="fa-solid fa-fire"></i></div>
                             <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Savory, umami-bomb
                                 perfect for pizza and pasta.</p>
@@ -245,14 +251,15 @@
                         <div
                             class="relative h-64 bg-gray-100 dark:bg-gray-900 flex justify-center items-center overflow-hidden">
                             <span
-                                class="absolute top-4 right-4 bg-red-100 text-brandRed text-xs font-bold px-3 py-1 rounded-full z-10">Hot</span>
-                            <img src="https://loremflickr.com/600/800/bottle,sauce?lock=106" alt="Black Ash"
-                                class="h-[80%] object-contain drop-shadow-xl z-10 transition-transform duration-500 hover:-translate-y-2">
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Hot</span>
+                            <img src="https://images.pexels.com/photos/6605151/pexels-photo-6605151.jpeg"
+                                alt="Black Ash"
+                                class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Black Ash</h3>
                             <p class="text-gray-500 text-sm mb-4">Charred Habanero • Smoke</p>
-                            <div class="flex gap-1 text-brandOrange text-sm mb-4"><i class="fa-solid fa-fire"></i><i
+                            <div class="flex gap-1 text-brandRed text-sm mb-4"><i class="fa-solid fa-fire"></i><i
                                     class="fa-solid fa-fire"></i><i class="fa-solid fa-fire"></i></div>
                             <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Intense smoke flavor with
                                 a heavy, lingering burn.</p>
@@ -266,15 +273,15 @@
                         <div
                             class="relative h-64 bg-gray-100 dark:bg-gray-900 flex justify-center items-center overflow-hidden">
                             <span
-                                class="absolute top-4 right-4 bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
                             <img src="https://images.pexels.com/photos/16246518/pexels-photo-16246518.jpeg"
                                 alt="Fire Honey"
-                                class="h-[80%] object-contain drop-shadow-xl z-10 transition-transform duration-500 hover:-translate-y-2">
+                                class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Fire Honey</h3>
                             <p class="text-gray-500 text-sm mb-4">Wildflower Honey • Chili</p>
-                            <div class="flex gap-1 text-orange-400 text-sm mb-4"><i class="fa-solid fa-fire"></i><i
+                            <div class="flex gap-1 text-brandRed text-sm mb-4"><i class="fa-solid fa-fire"></i><i
                                     class="fa-solid fa-fire"></i></div>
                             <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Sweet heat. Drizzle on
                                 fried chicken and pizza.</p>
@@ -288,14 +295,15 @@
                         <div
                             class="relative h-64 bg-gray-100 dark:bg-gray-900 flex justify-center items-center overflow-hidden">
                             <span
-                                class="absolute top-4 right-4 bg-red-100 text-brandRed text-xs font-bold px-3 py-1 rounded-full z-10">Hot</span>
-                            <img src="https://loremflickr.com/600/800/bottle,sauce?lock=108" alt="Tequila Lime Fire"
-                                class="h-[80%] object-contain drop-shadow-xl z-10 transition-transform duration-500 hover:-translate-y-2">
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Hot</span>
+                            <img src="https://images.pexels.com/photos/19841840/pexels-photo-19841840.jpeg"
+                                alt="Tequila Lime Fire"
+                                class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Tequila Lime Fire</h3>
                             <p class="text-gray-500 text-sm mb-4">Agave • Ghost Pepper</p>
-                            <div class="flex gap-1 text-brandOrange text-sm mb-4"><i class="fa-solid fa-fire"></i><i
+                            <div class="flex gap-1 text-brandRed text-sm mb-4"><i class="fa-solid fa-fire"></i><i
                                     class="fa-solid fa-fire"></i><i class="fa-solid fa-fire"></i></div>
                             <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">A citrusy,
                                 tequila-infused punch that bites back.</p>
@@ -309,14 +317,15 @@
                         <div
                             class="relative h-64 bg-gray-100 dark:bg-gray-900 flex justify-center items-center overflow-hidden">
                             <span
-                                class="absolute top-4 right-4 bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full z-10">Mild</span>
-                            <img src="https://loremflickr.com/600/800/bottle,sauce?lock=109" alt="Smoked Poblano"
-                                class="h-[80%] object-contain drop-shadow-xl z-10 transition-transform duration-500 hover:-translate-y-2">
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Mild</span>
+                            <img src="https://images.pexels.com/photos/1566773/pexels-photo-1566773.jpeg"
+                                alt="Smoked Poblano"
+                                class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Smoked Poblano</h3>
                             <p class="text-gray-500 text-sm mb-4">Roasted Poblano • Cumin</p>
-                            <div class="flex gap-1 text-yellow-400 text-sm mb-4"><i class="fa-solid fa-fire"></i></div>
+                            <div class="flex gap-1 text-brandRed text-sm mb-4"><i class="fa-solid fa-fire"></i></div>
                             <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Earthy, rich, and
                                 extremely mild.</p>
                             <a href="#" class="btn-primary w-full text-sm py-2">View Flavor</a>
@@ -329,14 +338,15 @@
                         <div
                             class="relative h-64 bg-gray-100 dark:bg-gray-900 flex justify-center items-center overflow-hidden">
                             <span
-                                class="absolute top-4 right-4 bg-red-100 text-brandRed text-xs font-bold px-3 py-1 rounded-full z-10">Hot</span>
-                            <img src="https://loremflickr.com/600/800/bottle,sauce?lock=110" alt="Truffle Burn"
-                                class="h-[80%] object-contain drop-shadow-xl z-10 transition-transform duration-500 hover:-translate-y-2">
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Hot</span>
+                            <img src="https://images.pexels.com/photos/39305177/pexels-photo-39305177.jpeg"
+                                alt="Truffle Burn"
+                                class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Truffle Burn</h3>
                             <p class="text-gray-500 text-sm mb-4">Black Truffle • Habanero</p>
-                            <div class="flex gap-1 text-brandOrange text-sm mb-4"><i class="fa-solid fa-fire"></i><i
+                            <div class="flex gap-1 text-brandRed text-sm mb-4"><i class="fa-solid fa-fire"></i><i
                                     class="fa-solid fa-fire"></i><i class="fa-solid fa-fire"></i></div>
                             <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Luxurious truffle flavor
                                 masking a vicious heat.</p>
@@ -350,14 +360,15 @@
                         <div
                             class="relative h-64 bg-gray-100 dark:bg-gray-900 flex justify-center items-center overflow-hidden">
                             <span
-                                class="absolute top-4 right-4 bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
-                            <img src="https://loremflickr.com/600/800/bottle,sauce?lock=111" alt="Mustard Venom"
-                                class="h-[80%] object-contain drop-shadow-xl z-10 transition-transform duration-500 hover:-translate-y-2">
+                                class="absolute top-4 right-4 bg-brandRed text-white shadow-md text-xs font-bold px-3 py-1 rounded-full z-10">Medium</span>
+                            <img src="https://images.pexels.com/photos/13991925/pexels-photo-13991925.jpeg"
+                                alt="Mustard Venom"
+                                class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Mustard Venom</h3>
                             <p class="text-gray-500 text-sm mb-4">Spicy Mustard • Scotch Bonnet</p>
-                            <div class="flex gap-1 text-orange-400 text-sm mb-4"><i class="fa-solid fa-fire"></i><i
+                            <div class="flex gap-1 text-brandRed text-sm mb-4"><i class="fa-solid fa-fire"></i><i
                                     class="fa-solid fa-fire"></i></div>
                             <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">A Carolina-style mustard
                                 base with serious attitude.</p>
@@ -371,10 +382,10 @@
                         <div
                             class="relative h-64 bg-gray-100 dark:bg-gray-900 flex justify-center items-center overflow-hidden">
                             <span
-                                class="absolute top-4 right-4 bg-red-900 text-white text-xs font-bold px-3 py-1 rounded-full z-10">Extreme</span>
+                                class="absolute top-4 right-4 bg-brandRed/30 text-white text-xs font-bold px-3 py-1 rounded-full z-10">Extreme</span>
                             <img src="https://images.pexels.com/photos/8253971/pexels-photo-8253971.jpeg"
                                 alt="Ghost Wood"
-                                class="h-[80%] object-contain drop-shadow-xl z-10 transition-transform duration-500 hover:-translate-y-2">
+                                class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-1">Ghost Wood</h3>
@@ -408,10 +419,10 @@
                             <div class="flex justify-between mb-2">
                                 <span class="font-bold text-lg">Smoked Ember</span>
                                 <span
-                                    class="text-brandOrange font-bold text-sm bg-orange-100 px-2 py-1 rounded">Smokiness</span>
+                                    class="text-brandRed font-bold text-sm bg-brandRed/10 px-2 py-1 rounded">Smokiness</span>
                             </div>
                             <div class="matrix-bar w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 relative">
-                                <div class="bg-brandOrange h-3 rounded-full absolute top-0 left-0" style="width: 90%;"
+                                <div class="bg-brandRed h-3 rounded-full absolute top-0 left-0" style="width: 90%;"
                                     data-aos="slide-right" data-aos-duration="1500" data-aos-delay="200"></div>
                             </div>
                         </div>
@@ -421,10 +432,10 @@
                             <div class="flex justify-between mb-2">
                                 <span class="font-bold text-lg">Mango Blaze</span>
                                 <span
-                                    class="text-yellow-600 font-bold text-sm bg-yellow-100 px-2 py-1 rounded">Sweetness</span>
+                                    class="text-brandRed font-bold text-sm bg-brandRed/10 px-2 py-1 rounded">Sweetness</span>
                             </div>
                             <div class="matrix-bar w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 relative">
-                                <div class="bg-yellow-500 h-3 rounded-full absolute top-0 left-0" style="width: 85%;"
+                                <div class="bg-brandRed h-3 rounded-full absolute top-0 left-0" style="width: 85%;"
                                     data-aos="slide-right" data-aos-duration="1500" data-aos-delay="300"></div>
                             </div>
                         </div>
@@ -434,10 +445,10 @@
                             <div class="flex justify-between mb-2">
                                 <span class="font-bold text-lg">Green Voltage</span>
                                 <span
-                                    class="text-green-700 font-bold text-sm bg-green-100 px-2 py-1 rounded">Tanginess</span>
+                                    class="text-brandRed font-bold text-sm bg-brandRed/10 px-2 py-1 rounded">Tanginess</span>
                             </div>
                             <div class="matrix-bar w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 relative">
-                                <div class="bg-green-500 h-3 rounded-full absolute top-0 left-0" style="width: 95%;"
+                                <div class="bg-brandRed h-3 rounded-full absolute top-0 left-0" style="width: 95%;"
                                     data-aos="slide-right" data-aos-duration="1500" data-aos-delay="400"></div>
                             </div>
                         </div>
@@ -446,7 +457,7 @@
                         <div>
                             <div class="flex justify-between mb-2">
                                 <span class="font-bold text-lg">Inferno Drop</span>
-                                <span class="text-brandRed font-bold text-sm bg-red-100 px-2 py-1 rounded">Heat
+                                <span class="text-brandRed font-bold text-sm bg-brandRed/10 px-2 py-1 rounded">Heat
                                     Intensity</span>
                             </div>
                             <div class="matrix-bar w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 relative">
@@ -457,12 +468,12 @@
                     </div>
 
                     <div class="relative h-[400px] rounded-2xl overflow-hidden" data-aos="fade-left">
-                        <img src="https://images.pexels.com/photos/25383635/pexels-photo-25383635.jpeg" alt="Flavor Matrix Spices"
-                            class="w-full h-full object-cover">
+                        <img src="https://images.pexels.com/photos/25383635/pexels-photo-25383635.jpeg"
+                            alt="Flavor Matrix Spices" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-brandCharcoal/40 flex items-center justify-center">
                             <div
                                 class="text-center text-white p-6 border-2 border-white/50 backdrop-blur-sm rounded-xl">
-                                <h3 class="text-2xl font-bold mb-2">Precision Crafting</h3>
+                                <h3 class="text-2xl font-bold mb-2 text-white">Precision Crafting</h3>
                                 <p class="text-sm">Every batch is rigorously tested.</p>
                             </div>
                         </div>
@@ -472,13 +483,17 @@
         </section>
 
         <!-- SECTION 5: Product CTA -->
-        <section class="py-24 bg-gray-50 dark:bg-brandCharcoal text-brandCharcoal dark:text-white section-padding text-center">
+        <section
+            class="py-24 bg-gray-50 dark:bg-brandCharcoal text-brandCharcoal dark:text-white section-padding text-center">
             <div class="max-w-3xl mx-auto" data-aos="zoom-in">
                 <i class="fa-solid fa-pepper-hot text-5xl text-brandRed mb-6"></i>
-                <h2 class="text-4xl md:text-5xl font-display mb-6 text-brandCharcoal dark:text-white">Not Sure Where to Start?</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Take our interactive flavor quiz to find your perfect heat match
+                <h2 class="text-4xl md:text-5xl font-display mb-6 text-brandCharcoal dark:text-white">Not Sure Where to
+                    Start?</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Take our interactive flavor quiz to find your
+                    perfect heat match
                     in under 60 seconds.</p>
-                <button class="btn-primary border-2 border-brandRed bg-transparent hover:bg-brandRed text-brandRed hover:text-white text-lg px-8 py-4 transition-colors">
+                <button
+                    class="btn-primary border-2 border-brandRed bg-transparent hover:bg-brandRed text-brandRed hover:text-white text-lg px-8 py-4 transition-colors">
                     Find My Sauce
                 </button>
             </div>
@@ -496,7 +511,7 @@
                     <a href="index.html" class="flex items-center gap-2 mb-6">
                         <i class="fa-solid fa-fire-flame-curved text-brandRed text-3xl"></i>
                         <span
-                            class="font-display font-black text-3xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
+                            class="font-display font-black text-2xl tracking-tighter text-brandCharcoal dark:text-white">Fyrza</span>
                     </a>
                     <p class="text-gray-600 dark:text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
                         Small batch, artisan hot sauces built for flavor before fire. Crafted with natural ingredients
@@ -540,9 +555,9 @@
                     <ul class="space-y-4">
                         <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Mild & Mellow</a>
                         </li>
-                        <li><a href="#" class="text-gray-400 hover:text-brandOrange transition-colors">Medium Kick</a>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Medium Kick</a>
                         </li>
-                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Hot & Heavy</a>
+                        <li><a href="#" class="text-gray-400 hover:text-brandRed transition-colors">Hot & Heavy</a>
                         </li>
                         <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors">Extreme Fire</a></li>
                     </ul>
