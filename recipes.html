@@ -25,7 +25,7 @@
     <!-- Global Header -->
     <header id="globalHeader" class="fixed top-0 w-full z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex justify-between items-center h-20 gap-6 xl:gap-8">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="index.html" class="flex items-center gap-2 group">
@@ -37,7 +37,7 @@
                 </div>
 
                 <!-- Desktop Nav -->
-                <nav class="hidden lg:flex gap-8 items-center" aria-label="Main Navigation">
+                <nav class="hidden xl:flex gap-8 items-center" aria-label="Main Navigation">
                     <a href="index.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home</a>
                     <a href="home-2.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">Home 2</a>
                     <a href="about.html" class="nav-link text-gray-900 dark:text-gray-100 py-2">About</a>
@@ -48,7 +48,7 @@
                 </nav>
 
                 <!-- Right Actions -->
-                <div class="hidden lg:flex items-center gap-6">
+                <div class="hidden xl:flex items-center gap-6">
 
                     <button id="rtlToggle"
                         class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors"
@@ -66,7 +66,7 @@
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <div class="lg:hidden flex items-center gap-4">
+                <div class="xl:hidden flex items-center gap-4">
                     <button id="themeToggleMobile"
                         class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-brandRed hover:text-white transition-colors">
                         <i class="fa-solid fa-moon"></i>
@@ -82,7 +82,7 @@
 
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobileMenu"
-            class="hidden lg:hidden bg-white dark:bg-gray-900 absolute w-full border-b border-gray-100 dark:border-gray-800 shadow-xl">
+            class="hidden xl:hidden bg-white dark:bg-gray-900 absolute w-full border-b border-gray-100 dark:border-gray-800 shadow-xl">
             <div class="px-4 pt-2 pb-6 space-y-2">
                 <a href="index.html"
                     class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800">Home</a>
@@ -138,7 +138,7 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Recipe 1 -->
-                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col h-full"
                         data-aos="fade-up" data-aos-delay="100">
                         <div class="relative h-56 overflow-hidden">
                             <img src="https://images.pexels.com/photos/36989868/pexels-photo-36989868.jpeg"
@@ -148,20 +148,20 @@
                                 class="absolute top-4 right-4 bg-black/70 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full"><i
                                     class="fa-regular fa-clock mr-1"></i> 45m</span>
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-grow">
                             <span
                                 class="text-brandRed text-xs font-bold uppercase tracking-wider mb-2 block">Appetizer</span>
                             <h3 class="text-xl font-bold mb-2">Mango Habanero Wings</h3>
                             <p class="text-gray-500 text-sm mb-4">Sticky, sweet, and undeniably hot.</p>
                             <a href="#"
-                                class="text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
+                                class="mt-auto text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
                                 Recipe <i
                                     class="fa-solid fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i></a>
                         </div>
                     </div>
 
                     <!-- Recipe 2 -->
-                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col h-full"
                         data-aos="fade-up" data-aos-delay="200">
                         <div class="relative h-56 overflow-hidden">
                             <img src="https://images.pexels.com/photos/18319038/pexels-photo-18319038.jpeg"
@@ -171,20 +171,20 @@
                                 class="absolute top-4 right-4 bg-black/70 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full"><i
                                     class="fa-regular fa-clock mr-1"></i> 15m</span>
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-grow">
                             <span
                                 class="text-brandRed text-xs font-bold uppercase tracking-wider mb-2 block">Breakfast</span>
                             <h3 class="text-xl font-bold mb-2">Spicy Breakfast Tacos</h3>
                             <p class="text-gray-500 text-sm mb-4">Wake up right with Green Voltage.</p>
                             <a href="#"
-                                class="text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
+                                class="mt-auto text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
                                 Recipe <i
                                     class="fa-solid fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i></a>
                         </div>
                     </div>
 
                     <!-- Recipe 3 -->
-                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow sm:col-span-2 sm:max-w-md sm:mx-auto lg:col-span-1 lg:max-w-none w-full"
+                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow sm:col-span-2 sm:max-w-md sm:mx-auto lg:col-span-1 lg:max-w-none w-full flex flex-col h-full"
                         data-aos="fade-up" data-aos-delay="300">
                         <div class="relative h-56 overflow-hidden">
                             <img src="https://images.pexels.com/photos/6068717/pexels-photo-6068717.jpeg"
@@ -194,133 +194,133 @@
                                 class="absolute top-4 right-4 bg-black/70 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full"><i
                                     class="fa-regular fa-clock mr-1"></i> 25m</span>
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-grow">
                             <span
                                 class="text-brandRed text-xs font-bold uppercase tracking-wider mb-2 block">Dinner</span>
                             <h3 class="text-xl font-bold mb-2">Fire Honey Pizza</h3>
                             <p class="text-gray-500 text-sm mb-4">Pepperoni, burrata, and hot honey drizzle.</p>
                             <a href="#"
-                                class="text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
+                                class="mt-auto text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
                                 Recipe <i
                                     class="fa-solid fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i></a>
                         </div>
                     </div>
 
                     <!-- Recipe 4 -->
-                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col h-full"
                         data-aos="fade-up" data-aos-delay="100">
                         <div class="relative h-56 overflow-hidden">
                             <img src="https://images.pexels.com/photos/5409014/pexels-photo-5409014.jpeg"
                                 alt="Chili Garlic Noodles"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-grow">
                             <span
                                 class="text-brandRed text-xs font-bold uppercase tracking-wider mb-2 block">Dinner</span>
                             <h3 class="text-xl font-bold mb-2">Chili Garlic Noodles</h3>
                             <p class="text-gray-500 text-sm mb-4">10-minute umami bomb featuring Garlic Fury.</p>
                             <a href="#"
-                                class="text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
+                                class="mt-auto text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
                                 Recipe <i
                                     class="fa-solid fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i></a>
                         </div>
                     </div>
 
                     <!-- Recipe 5 -->
-                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col h-full"
                         data-aos="fade-up" data-aos-delay="200">
                         <div class="relative h-56 overflow-hidden">
                             <img src="https://images.pexels.com/photos/27988502/pexels-photo-27988502.jpeg"
                                 alt="Smoked Pepper Burger"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-grow">
                             <span
                                 class="text-brandRed text-xs font-bold uppercase tracking-wider mb-2 block">Lunch</span>
                             <h3 class="text-xl font-bold mb-2">Smoked Pepper Burger</h3>
                             <p class="text-gray-500 text-sm mb-4">The ultimate spicy smash burger build.</p>
                             <a href="#"
-                                class="text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
+                                class="mt-auto text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
                                 Recipe <i
                                     class="fa-solid fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i></a>
                         </div>
                     </div>
 
                     <!-- Recipe 6 -->
-                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col h-full"
                         data-aos="fade-up" data-aos-delay="300">
                         <div class="relative h-56 overflow-hidden">
                             <img src="https://images.pexels.com/photos/10432661/pexels-photo-10432661.jpeg"
                                 alt="Hot Honey Salmon"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-grow">
                             <span
                                 class="text-brandRed text-xs font-bold uppercase tracking-wider mb-2 block">Dinner</span>
                             <h3 class="text-xl font-bold mb-2">Hot Honey Salmon</h3>
                             <p class="text-gray-500 text-sm mb-4">Caramelized sweet heat crust.</p>
                             <a href="#"
-                                class="text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
+                                class="mt-auto text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
                                 Recipe <i
                                     class="fa-solid fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i></a>
                         </div>
                     </div>
 
                     <!-- Recipe 7 -->
-                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col h-full"
                         data-aos="fade-up" data-aos-delay="100">
                         <div class="relative h-56 overflow-hidden">
                             <img src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg"
                                 alt="Fiery Avocado Toast"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-grow">
                             <span
                                 class="text-brandRed text-xs font-bold uppercase tracking-wider mb-2 block">Breakfast</span>
                             <h3 class="text-xl font-bold mb-2">Fiery Avocado Toast</h3>
                             <p class="text-gray-500 text-sm mb-4">Elevated mornings with Inferno Drop.</p>
                             <a href="#"
-                                class="text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
+                                class="mt-auto text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
                                 Recipe <i
                                     class="fa-solid fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i></a>
                         </div>
                     </div>
 
                     <!-- Recipe 8 -->
-                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col h-full"
                         data-aos="fade-up" data-aos-delay="200">
                         <div class="relative h-56 overflow-hidden">
                             <img src="https://images.pexels.com/photos/8251354/pexels-photo-8251354.jpeg"
                                 alt="Spicy Grilled Corn"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-grow">
                             <span class="text-brandRed text-xs font-bold uppercase tracking-wider mb-2 block">Side
                                 Dish</span>
                             <h3 class="text-xl font-bold mb-2">Spicy Grilled Corn</h3>
                             <p class="text-gray-500 text-sm mb-4">Summer BBQ essential side dish.</p>
                             <a href="#"
-                                class="text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
+                                class="mt-auto text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
                                 Recipe <i
                                     class="fa-solid fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i></a>
                         </div>
                     </div>
 
                     <!-- Recipe 9 -->
-                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
+                    <div class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col h-full"
                         data-aos="fade-up" data-aos-delay="300">
                         <div class="relative h-56 overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80"
                                 alt="Chili Lime Shrimp"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-grow">
                             <span
                                 class="text-brandRed text-xs font-bold uppercase tracking-wider mb-2 block">Dinner</span>
                             <h3 class="text-xl font-bold mb-2">Chili Lime Shrimp</h3>
                             <p class="text-gray-500 text-sm mb-4">Zesty, bright, and quick pan-fried shrimp.</p>
                             <a href="#"
-                                class="text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
+                                class="mt-auto text-brandRed font-semibold hover:text-brandRedDark flex items-center gap-2">Get
                                 Recipe <i
                                     class="fa-solid fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i></a>
                         </div>
