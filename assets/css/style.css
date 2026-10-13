@@ -86,6 +86,25 @@ header {
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
+#globalHeader .max-w-7xl {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  #globalHeader .max-w-7xl {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #globalHeader .max-w-7xl {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 .nav-link {
   position: relative;
   font-weight: 500;
@@ -158,4 +177,34 @@ img {
 .matrix-fill {
   height: 100%;
   background-color: var(--color-accent);
+}
+
+/* Social Media Icons */
+footer a[aria-label="Instagram"],
+footer a[aria-label="TikTok"],
+footer a[aria-label="Twitter"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--color-secondary);
+}
+
+footer a[aria-label="Instagram"]:hover,
+footer a[aria-label="TikTok"]:hover,
+footer a[aria-label="Twitter"]:hover {
+  background-color: var(--color-primary) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+footer a[aria-label="Instagram"]:hover i,
+footer a[aria-label="TikTok"]:hover i,
+footer a[aria-label="Twitter"]:hover i {
+  color: #ffffff !important;
+}
+
+.fa-brands {
+  display: inline-block;
+  line-height: 1;
 }

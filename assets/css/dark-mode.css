@@ -53,3 +53,17 @@
   background-color: #333;
 }
 
+.dark footer a[aria-label="Instagram"],
+.dark footer a[aria-label="TikTok"],
+.dark footer a[aria-label="Twitter"] {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.dark footer a[aria-label="Instagram"]:hover,
+.dark footer a[aria-label="TikTok"]:hover,
+.dark footer a[aria-label="Twitter"]:hover {
+  background-color: var(--color-primary) !important;
+  color: #ffffff !important;
+}
+
